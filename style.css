@@ -1,6 +1,36 @@
-*
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-thin.ttf');
+}
+
+
+
+header
 {
-    font-family: Raleway;
+    display:flex;
+    justify-content: space-between;
+}
+
+#logo
+{
+    top: 50px;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav li 
+{
+    list-style: none;
+    padding-top: 5px;
+    padding-right: 50px;
 }
 
 .section2

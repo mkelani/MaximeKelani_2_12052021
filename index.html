@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <!-- head -->
 <head>
-
+    
+    <html lang="fr">
+    <title>Reservia,l'outil de planification de vos vacances</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Reservia,l'outil de planification de vos vacances</title>
-
 </head>
 
 <!-- body -->
 <body>
 
    <!-- Header -->
-   <header>
+   <header class="border">
        <p>
-           <img src="images/logo/reservia-logo.png" alt="Le logo de Reservia" />
+           <img id="logo" src="images/logo/Webp.net-resizeimage2.png" alt="Le logo de Reservia" class="border orange" />
        </p>
-       <nav>
-           <p>
-               S'inscrire
-           </p>
-           <p>
-               Hébergements
-            </p>
-           <p>
-               Activités
-            </p>
+       <nav class="border fuschia">
+           <ul>
+               <li>Hébergements</li>
+               <li>Activités</li>
+               <li>S'inscrire</li>
+           </ul>
        </nav>
    </header>
    
    <!-- Section 1 Recherche-->
    <section>
        <h1>
-           Trouvez votre hébergement pour des vacances de rêve
-        </h1>
+           Trouvez votre hébergement pour des vacances de rêve</h1>
        <p>
            En plein centre ville ou en pleine nature
         </p>
@@ -76,41 +71,29 @@
 
    
    <!-- Footer -->
-   <footer>
-    <h2>
-        A propos
-    </h2>
-    <p>
-        Fonctionnement du site
-    </p>
-    <p>
-        Conditions générales de vente
-    </p>
-    <p>
-        Données et confidentialité
-    </p>
-    <h2>
-        Nos Hébergements
-    </h2>
-    <p>
-        Charte qualité
-    </p>
-    <p>
-        Soumettre votre hôtel
-    </p>
-    <h2>
-        Assistance
-    </h2>
-    <p>
-        Centre d'aide
-    </p>
-    <p>
-        Nous contacter
-    </p>
-    
+   <footer class="border">
+       <div id="footerContent" class="border orange">
+           <div class="footerColumn border lime">
+               <h3 class="border pink">A propos</h3>
+               <p class="border pink">Fonctionnement du site</p>
+               <p class="border pink">Conditions générales de vente</p>
+               <p class="border pink">Données et confidentialité</p>
+            </div>
+               
+            <div class="footerColumn border lime">   
+               <h3 class="border pink">Nos Hébergements</h2>
+               <p class="border pink">Charte qualité</p>
+               <p class="border pink">Soumettre votre hôtel</p>
+            </div>
 
- </footer>
-
+            <div>
+              <h3 class="border pink">Assistance</h3>
+              <p class="border pink">Centre d'aide</p>
+              <p class="border pink">Nous contacter</p>
+            </div> 
+        </div>
+    </footer>
+   
     
 </body>
 
