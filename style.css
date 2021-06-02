@@ -1,44 +1,363 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-thin.ttf');
+ body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
-
-
-header
-{
-    display:flex;
-    justify-content: space-between;
+.borderNone {
+    border: none;
 }
 
-#logo
-{
-    top: 50px;
+.colorBlue {
+    color: #0065FC;
 }
-nav
-{
-    display: flex;
+
+.colorLightBlue {
+    color: #deebff;
+}
+
+.colorGrey {
+    color: #F2F2F2;
+}
+
+.backgroundBlue {
+    background-color: #0065FC;
+}
+
+.backgroundLightBlue {
+    background-color: #deebff;
+}
+
+.backgroundGrey {
+    background-color: #F2F2F2;
+}
+
+header {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.navigation {
+    display: grid;
+    justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . lodging activities sign-up";
 }
 
-nav ul
-{
+
+
+#logo {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.navigation .navigation-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0065fc;
 }
 
-nav li 
-{
-    list-style: none;
-    padding-top: 5px;
-    padding-right: 50px;
+.navbar #navigation-sign-up-link {
+    grid-area: sign-up;
+    color: #0065fc;
+    font-weight: 600;
+}
+
+#navigation-link-sign-up a {
+    color: #0065fc;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+
+
+.navigation .navigation link {
+    color: #0065FC;
+}
+
+.navigation #navigation-link-lodging > .underline-style {
+    background: #0065fc;
+}
+.navigation .navigation-link .underline-style {
+    width: 100%;
+    height: 3px;
+
+}
+
+.section1 {
+    background-color: #FFF;
+    padding-left: 30px;
+    margin-left: 20px;
+    
+}
+
+.h1-Title {
+    margin-left: 2.5em;
+    font-size: 23px;
+}
+
+#subtitle {
+    margin-left: 50px;
+}
+
+.researchBox {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.researchBar {
+    padding: 0 0 0 20px;
+height: 50px;
+width: 220px;
+border: none;
+border-top: solid 1px #F2F2F2;
+border-bottom: solid 1px #F2F2F2;
+}
+
+
+
+
+
+
+.map-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 14px 0 0 14px;
+}
+
+#button-research {
+    border: none;
+    border-radius: 0 14px 14px 0;
+    background-color: #0065fc;
+    color: #FFF;
+    height: 50px;
+    width: 150px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.filtreChoice {
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    height: 50px;
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.filters-options {
+    display: flex;
+    margin: 50px;
+}
+
+.filter-icons {
+     color: #0065FC;
+     background-color: #deebff;
+     border-radius: 200px;
+     margin-right: 15px;
+     margin-left: 0px;
+     padding: 18px;
+ }
+
+.info-sentence {
+    margin: 50px;
+}
+
+.info-icon{
+     color: #FFF;
+     background-color: #0065FC;
+     border-radius: 200px;
+     margin-right: 15px;
+     margin-left: 0px;
+     padding: 18px;
 }
 
 .section2
 {
     background-color: #F2F2F2;
+    margin-left: 2.5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-radius: 25px;
+    width: 60%;
+    height: 17cm;
 }
 
-footer
-{
-    background-color: #F2F2F2;
+#containerHebergements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    padding: 0 0 0 0;
+    
 }
+
+#lodgings-section-title {
+    padding-top: 1.7em;
+}
+
+.img-lodgings {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+
+.hebergementsboxes {
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 6.7cm;
+    height: 5.4cm;
+    margin: 0;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.section3 {
+    background-color: #F2F2F2;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-radius: 25px;
+    width: 11.5cm;
+    height: 77%;
+    position: absolute;
+    right: 50px;
+    top: 535px;
+}
+
+#view-more-title {
+    padding-top: 1.1em;
+    
+}
+
+#containerLespluspopulaires {
+    
+}
+
+#hôtelSoleilImg {
+    float: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#aucoeurdeleauImg {
+    float: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#hôtelToutBleuEtBlancImg {
+    float: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.popularBoxes {
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 9.4cm;
+    height: 4cm;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.section4 {
+    background-color: #FFF;
+}
+
+#activities-section-title {
+    padding-left: 1.7em; 
+    padding-top: 1.7em;
+}
+
+#containerActivités {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+#vieuxportImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    
+}
+#fortdepomeguesImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+}
+
+#iledufrioulImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+}
+
+#parcnationaldescalanquesImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+}
+
+.notredamedelagardeImg {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+}
+
+.img-activities {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.parclongchampImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+}
+
+footer {
+    width: 100%;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+
+.footerSet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin-bottom: 0px;
+}
+
+.footerTitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footerBlock {
+    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
