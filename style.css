@@ -1,5 +1,7 @@
  body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    
+    margin: 0;
 }
 
 .borderNone {
@@ -15,117 +17,82 @@
 }
 
 .colorGrey {
-    color: #F2F2F2;
+    color: rgba(54, 54, 50, 0.2);
 }
 
-.backgroundBlue {
-    background-color: #0065FC;
-}
-
-.backgroundLightBlue {
-    background-color: #deebff;
-}
-
-.backgroundGrey {
-    background-color: #F2F2F2;
-}
-
-header {
-    width: 100%;
-    max-width: 1440px;
-}
-
-.navigation {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo . lodging activities sign-up";
-}
-
-
+ a {
+     text-decoration: none;
+     color: black;
+ }   
 
 #logo {
-    margin-left: 25px;
-    margin-top: 20px;
+    position: absolute;
+    top: 23px;
+    left: 1.2em;
 }
 
-.navigation .navigation-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #0065fc;
-}
-
-.navbar #navigation-sign-up-link {
-    grid-area: sign-up;
-    color: #0065fc;
-    font-weight: 600;
-}
-
-#navigation-link-sign-up a {
-    color: #0065fc;
-}
-
-a {
-    text-decoration: none;
-    color: initial;
-}
-
-
-
-.navigation .navigation link {
+#lodgings-link {
     color: #0065FC;
+    position: absolute;
+    right: 335px;
+    top: 48px;
 }
 
-.navigation #navigation-link-lodging > .underline-style {
-    background: #0065fc;
+#activities-link {
+    position: absolute;
+    right: 205px;
+    top: 48px;
+    color: black;
 }
-.navigation .navigation-link .underline-style {
-    width: 100%;
-    height: 3px;
 
+#inscription {
+    color: #0065FC;
+    position: absolute;
+    right: 65px;
+    top: 48px;
 }
+
 
 .section1 {
     background-color: #FFF;
     padding-left: 30px;
     margin-left: 20px;
-    
+}
+
+.main-title-sub-title {
+    margin-top: 7.7em;
+    margin-left: 2.5em;
 }
 
 .h1-Title {
-    margin-left: 2.5em;
-    font-size: 23px;
+    
+    left: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.92);
 }
 
 #subtitle {
-    margin-left: 50px;
+    position: absolute;
+    top: 145px;
 }
 
 .researchBox {
     display: inline-flex;
     flex-direction: row;
-    margin: 50px;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-left: 2.5em;
+    margin-top: 30px;
 }
 
 .researchBar {
     padding: 0 0 0 20px;
-height: 50px;
-width: 220px;
-border: none;
-border-top: solid 1px #F2F2F2;
-border-bottom: solid 1px #F2F2F2;
+    height: 50px;
+    width: 220px;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    font-size: larger;
+    text-decoration: none;
 }
-
-
-
-
-
 
 .map-icon {
     display: flex;
@@ -150,52 +117,79 @@ border-bottom: solid 1px #F2F2F2;
     cursor: pointer;
 }
 
-.filtreChoice {
-    border: 3px solid #F2F2F2;
-    border-radius: 30px;
+.filterChoice {
+    border: 2px solid rgba(54, 54, 50, 0.2);
+    border-left: none;
+    border-radius: 200px;
     height: 50px;
-    width: 10%;
-    text-align: center;
     font-weight: bold;
     margin-left: 30px;
+    color: rgba(0, 0, 0, 0.92);
+
 }
 
 .filters-options {
     display: flex;
-    margin: 50px;
+    margin-top: 32px;
+    margin-left: 2.5em;
 }
 
 .filter-icons {
+     
      color: #0065FC;
      background-color: #deebff;
      border-radius: 200px;
      margin-right: 15px;
-     margin-left: 0px;
+     margin-left: px;
      padding: 18px;
+     width: 20px;
+ }
+
+ .filter-icons:hover {
+     background-color: #FFF;
+ }
+
+ .filter-bill {
+     left: px;
+ }
+
+ .filter-economical {
+     width: 190px;
+ }
+
+ .filter-family {
+     width: 145px;
+ }
+
+ .filter-romantic {
+    width: 180px;
+ }
+
+ .filter-authorized-animals {
+     width: 235px;
  }
 
 .info-sentence {
-    margin: 50px;
+    margin-top: 18px;
+    margin-left: 2.5em;
 }
 
-.info-icon{
-     color: #FFF;
+.info-icon {
+     font-size: larger;
+     color: white;
      background-color: #0065FC;
      border-radius: 200px;
-     margin-right: 15px;
-     margin-left: 0px;
-     padding: 18px;
 }
 
-.section2
-{
+.section2 {
     background-color: #F2F2F2;
+    margin-top: 21px;
     margin-left: 2.5em;
     padding-left: 2.5em;
     padding-right: 2.5em;
     border-radius: 25px;
     width: 60%;
-    height: 17cm;
+    height: 39em;
 }
 
 #containerHebergements {
@@ -208,34 +202,44 @@ border-bottom: solid 1px #F2F2F2;
 
 #lodgings-section-title {
     padding-top: 1.7em;
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.hotel-name {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+
+.price {
+    margin-top: 0px;
+    margin-left: 15px;
 }
 
 .img-lodgings {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
+    padding: 0.3em;
 }
 
 
 .hebergementsboxes {
     background-color: #FFF;
     border-radius: 10px;
-    width: 6.7cm;
+    width: 15.3em;
     height: 5.4cm;
     margin: 0;
     box-shadow: 0px 0px 6px 0px #0000002e;
+    color:black
 }
 
-.section3 {
-    background-color: #F2F2F2;
-    margin-left: 30px;
-    padding-left: 30px;
-    border-radius: 25px;
-    width: 11.5cm;
-    height: 77%;
-    position: absolute;
-    right: 50px;
-    top: 535px;
+.hebergementsboxes:hover {
+    background: #F2F2F2;
+}
+
+.lodgings-stars {
+    margin-top: 7px;
+    
 }
 
 #view-more-title {
@@ -243,34 +247,61 @@ border-bottom: solid 1px #F2F2F2;
     
 }
 
-#containerLespluspopulaires {
-    
+.section3 {
+    background-color: #F2F2F2;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-radius: 25px;
+    width: 21.5%;
+    height: 39em;
+    position: absolute;
+    right: 50px;
+    top: 400px;
 }
 
-#hôtelSoleilImg {
+.title-h2-plus-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.most-populars-title {
+    color: rgba(0, 0, 0, 0.92);
+    margin-top: 40px;
+}
+
+.arrow-chart {
+    font-size: 23px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.img-most-populars {
     float: left;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-}
-
-#aucoeurdeleauImg {
-    float: left;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-#hôtelToutBleuEtBlancImg {
-    float: left;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    padding-top: 0.2em;
+    padding-left: 0.2em;
+    padding-bottom: 0.2em;
+    padding-right: 1.2em;
 }
 
 .popularBoxes {
     background-color: #FFF;
     border-radius: 10px;
     width: 9.4cm;
-    height: 4cm;
+    height: 8.9em;
     box-shadow: 0px 0px 6px 0px #0000002e;
+    color: black;
+}
+
+.popularBoxes:hover {
+    background: #f5f5f5;
+}
+
+.price-populars {
+    padding-top: 10px;
 }
 
 .section4 {
@@ -289,44 +320,62 @@ border-bottom: solid 1px #F2F2F2;
     padding-left: 2.5em;
     padding-right: 2.5em;
     padding-bottom: 2.5em;
+
+}
+
+#containerActivités:hover {
+    color: #F2F2F2;
+}
+
+.activities-parts-titles {
+    margin-top: 13px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.92)
 }
 
 #vieuxportImg {
+
     border-radius: 20px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    
 }
 #fortdepomeguesImg {
     border-radius: 20px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    color: black;
 }
 
 #iledufrioulImg {
     border-radius: 20px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    color: black;
 }
 
 #parcnationaldescalanquesImg {
     border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);   
+    color: black;  
 }
 
 .notredamedelagardeImg {
-    object-fit: cover;
     width: 100%;
     margin: 0;
     border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);  
+    color: black;   
 }
 
 .img-activities {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    color: black;  
 }
 
 .parclongchampImg {
     border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);     
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+    color: rgba(15, 15, 1, 0.99);  
+
 }
 
 footer {
@@ -343,13 +392,15 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1440px;
     margin-bottom: 0px;
+    margin-left: 1em;
 }
 
 .footerTitle {
     font-size: 18px;
     margin-bottom: 15px;
+    color: rgba(15, 15, 1, 0.99);
+    font-weight: bold;
 }
 
 .footerBlock {
@@ -357,7 +408,19 @@ footer {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    
 }
 
+.block-about {
 
+    left: 2em;
+}
+
+.block-lodgings {
+    position: absolute;
+    left: 600px;
+}
+
+.block-support {
+    position: absolute;
+    right: 445px;
+}
