@@ -20,19 +20,21 @@
    
         <!-- En-tête de la page -->
         <header>
-            <div>
+            <nav class="header_navigation">
                 <a id="logo_img" href="index.html">
                 <img id="logo_img" src="images/logo/Webp.net-resizeimage2.png" alt="Logo Reservia" />
                 </a>
-            </div>
-            <nav class="header_navigation">
-                <ul>
-                    <li><div class="overline_effect"></div>
-                        <a href="#hebergement" id="lodgings_link">Hébergements</a>
-                    </li>
-                    <li><a href="#activites" id="activities_link">Activités</a></li>
-                    <li><a href="#" id="inscription">S'inscrire</a></li>
-                </ul>
+                <div id="navigation_link_lodgings" class="header_navigation_link header_active_link">
+                    <span class="overline_effect"></span>
+                    <a href="#hebergement">Hébergements</a>
+                </div>
+                <div id="navigation_link_activities" class="header_navigation_link header_active_link">
+                    <span class="overline_effect"></span>    
+                    <a href="#activities">Activités</a>
+                </div>
+                <div id="navigation_link_sign_up" class="header_navigation_link">
+                    <a href="#">S'inscrire</a>
+                </div>
             </nav>
         </header>
    
