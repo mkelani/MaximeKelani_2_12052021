@@ -234,6 +234,8 @@
      border-radius: 200px;
 }
 
+/* Second section */
+
 .section2 {
     background-color: #F2F2F2;
     margin-top: 21px;
@@ -300,6 +302,7 @@
     
 }
 
+/* Third section */
 .section3 {
     background-color: #F2F2F2;
     margin-left: 30px;
@@ -377,8 +380,8 @@
 
 }
 
-#activities_container:hover {
-    color: #F2F2F2;
+.activities_boxes:hover {
+    background-color: #deebff;
 }
 
 .activities_parts_titles {
@@ -411,7 +414,7 @@
     color: black;  
 }
 
-.notre_dame_de_la_garde_img {
+#notre_dame_de_la_garde_img {
     width: 100%;
     margin: 0;
     border-radius: 20px;
@@ -425,7 +428,7 @@
     color: black;  
 }
 
-.parc_longchamp_img {
+#parc_longchamp_img {
     border-radius: 20px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
     color: rgba(15, 15, 1, 0.99);  
