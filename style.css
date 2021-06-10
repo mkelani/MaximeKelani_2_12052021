@@ -108,33 +108,30 @@
 }
 
 /* First section */
-.section1 {
+.first_section {
     background-color: #FFF;
-    padding-left: 30px;
-    margin-left: 20px;
 }
 
 .main_title_sub_title {
-    margin-top: 1%;
+    position: absolute;
+    top: 5.2em;
     margin-left: 2.5em;
 }
 
 .h1_title {
-    
-    left: 20px;
-    font-size: 25px;
     color: rgba(0, 0, 0, 0.92);
 }
 
 #subtitle {
-    
+    position: absolute;
+    top:2.6em;
 }
 
 .research_box {
     display: inline-flex;
     flex-direction: row;
     margin-left: 2.5em;
-    margin-top: 30px;
+    margin-top: 3.8em;
 }
 
 .research_bar {
@@ -223,7 +220,8 @@
  }
 
 .info_sentence {
-    margin-top: 18px;
+    margin-top: 2em;
+    margin-bottom: 2.3em;
     margin-left: 2.5em;
 }
 
@@ -311,8 +309,8 @@
     width: 21.5%;
     height: 39em;
     position: absolute;
-    right: 50px;
-    top: 400px;
+    right: 11.7em;
+    top: 25.5em;
 }
 
 .title_h2_plus_icon {
