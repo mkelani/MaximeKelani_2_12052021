@@ -357,7 +357,6 @@
 }
 
 .price_populars {
-    margin-top: ;
     margin-right: 3em;
 }
 
@@ -415,8 +414,8 @@
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
     color: black;
     position: absolute;
-    top: 90.2em;
-    height: 17%;
+    top: 90.4em;
+    height: 22.5%;
 }
 
 #parc_national_des_calanques_box {
@@ -439,12 +438,12 @@
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
     color: rgba(15, 15, 1, 0.99);  
     position: absolute;
-    top: 87.4em;
-    height: 21.5%;
+    top: 87.5em;
+    height: 29%;
 }
 
 #container_notre_dame_longchamp {
-    margin-right: 3.8em;
+    padding-right: 3.5em;
 }
 
 /* Footer */
@@ -465,6 +464,7 @@ footer {
     width: 100%;
     margin-bottom: 0px;
     margin-left: 1em;
+    margin-right: 27em;
 }
 
 .footer_title {
@@ -476,19 +476,21 @@ footer {
 
 .footer_block {
     
-    padding: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-right: 12em;
     display: flex;
     flex-direction: column;
 }
 
 .block_about {
-    margin-left: 11em;
+    margin-left: 13em;
 }
 
 .block_lodgings {
-    margin-left: 20em;
+    margin-left: 2em;
 }
 
 .block_support {
-    
+    margin-left: 3em;
 }
