@@ -98,6 +98,10 @@
     color: black;
 }
 
+#navigation_link_activities a:hover {
+    color: #0065fc;
+}
+
 #navigation_link_sign_up a {
     color: #0065fc;
 }
