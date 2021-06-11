@@ -57,6 +57,7 @@
     color: #0065FC;
     text-decoration: none;
     padding: 3em;
+    margin-right: 1em;
 }
 
 .header_navigation img {
@@ -116,26 +117,26 @@
     background-color: #FFF;
 }
 
-.main_title_sub_title {
-    position: absolute;
-    top: 5.2em;
-    margin-left: 2.5em;
-}
+
 
 .h1_title {
     color: rgba(0, 0, 0, 0.92);
+    position: absolute;
+    top: 4.5em;
+    left: 9.2em;
 }
 
 #subtitle {
     position: absolute;
-    top:2.6em;
+    top: 9.3em;
+    left: 14em;
 }
 
 .research_box {
     display: inline-flex;
     flex-direction: row;
     margin-left: 2.5em;
-    margin-top: 3.8em;
+    margin-top: 5.3em;
 }
 
 .research_bar {
@@ -219,7 +220,7 @@
  }
 
 .info_sentence {
-    margin-top: 2em;
+    margin-top: 1.7em;
     margin-bottom: 2.3em;
     margin-left: 2.5em;
 }
@@ -237,12 +238,12 @@
 
 .section2 {
     background-color: #F2F2F2;
-    margin-top: 21px;
+    margin-top: 1.5em;
     margin-left: 2.5em;
     padding-left: 2.5em;
     padding-right: 2.5em;
     border-radius: 25px;
-    width: 60%;
+    width: 54%;
     height: 39em;
 }
 
@@ -310,8 +311,8 @@
     width: 21.5%;
     height: 39em;
     position: absolute;
-    right: 11.7em;
-    top: 25.5em;
+    right: 17.5em;
+    top: 27em;
 }
 
 .title_h2_plus_icon {
@@ -380,6 +381,12 @@
 
 }
 
+.activities_img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: black;  
+}
+
 .activities_boxes:hover {
     background-color: #deebff;
 }
@@ -408,7 +415,7 @@
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
     color: black;
     position: absolute;
-    top: 88.5em;
+    top: 90.2em;
     height: 17%;
 }
 
@@ -427,19 +434,17 @@
     color: black;   
 }
 
-.activities_img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    color: black;  
-}
-
 #parc_longchamp_box {
     border-radius: 20px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
     color: rgba(15, 15, 1, 0.99);  
     position: absolute;
-    top: 85.8em;
+    top: 87.4em;
     height: 21.5%;
+}
+
+#container_notre_dame_longchamp {
+    margin-right: 3.8em;
 }
 
 /* Footer */
