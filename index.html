@@ -23,12 +23,13 @@
             <nav class="header_navigation">
                 <img id="logo_img" src="images/logo/Webp.net-resizeimage2.png" alt="Logo Reservia" />
                 <div id="navigation_link_lodgings" class="header_navigation_link header_active_link">
-                    <span class="overline_effect"></span>
+                    <span class="overline_effect underline-effect"></span>
                     <a href="#hebergement">Hébergements</a>
+
                 </div>
                 <div id="navigation_link_activities" class="header_navigation_link header_active_link">
-                    <span class="overline_effect"></span>    
-                    <a href="#activities_section_title">Activités</a>
+                    <span class="overline_effect underline_effect"></span>    
+                    <a href="#activities_section_title">Activités</a> 
                 </div>
                 <div id="navigation_link_sign_up" class="header_navigation_link ">
                     <a href="#">S'inscrire</a>
@@ -50,9 +51,12 @@
                     </div>
                     <input class="research_bar" type="search" placeholder="Marseille, France">
                     <button id="button_research">Rechercher</button>
+                    <button id="button_2">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
                 <div class="filters_options">
-                    <h3>Filtres</h3>
+                    <h3 id="title_filters">Filtres</h3>
                     <a href="#">
                     <div class="filter_choice filter_economical">
                         <i class="fas fa-money-bill-wave filter_icons filter_bill"></i>
@@ -88,9 +92,9 @@
           
                     <a href="#">
                         <div class="lodgings_boxes">
-                            <img class="lodgings_img" src="images/hebergements/4_small/auberge-la-canebiere2.jpg" alt="Une photo de l'auberge la Canebière">
+                            <img class="lodgings_img img_mobile" src="images/hebergements/4_small/auberge-la-canebiere2.jpg" alt="Une photo de l'auberge la Canebière">
                             <h3 class="place_name">Auberge la Canebière</h3>
-                            <p class="price"><data value="25€">Nuit à partir de 25€</data><br/>
+                            <p class="price"><data value="25€">Nuit à partir de 25€</data><br />
                                 <i class="fas fa-star colorBlue lodgings_stars"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorGrey"></i></p>
                         </div>
                     </a>
@@ -154,8 +158,8 @@
                     <a href="#">
                         <div class="popular_boxes">
                             <img class="img_most_populars" src="images/hebergements/4_small/hôtel-le-soleil-du-matin2.jpg" alt="Une photo de l'hôtel Le soleil du matin " id="hôtelSoleilImg">
-                            <h3>Hôtel Le soleil du<br/>matin</h3>
-                            <p class="price_populars"><data value="128€">Nuit à partir de 128€</data></p><br /><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i>
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p><data value="128€">Nuit à partir de 128€</data></p><br /><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i>
                         </div>
                     </a>
                     <a href="#">    
@@ -168,7 +172,7 @@
                     <a href="#">    
                         <div class="popular_boxes"> 
                             <img class="img_most_populars" src="images/hebergements/4_small/hôtel-tout-bleu-et-blanc2.jpg" alt="Une photo de l'hôtel Tout bleu et blanc" id="hôtelToutBleuEtBlancImg">
-                            <h3>Hôtel Tout bleu et<br/>Blanc</h3>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
                             <p class="price_populars"><data value="68€">Nuit à partir de 68€</data></p><br /><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorBlue"></i><i class="fas fa-star colorGrey"></i>
                         </div>
                     </a>    
@@ -237,7 +241,7 @@
                 </div>
                
                 <div class="footer_block block-lodgings">   
-                    <h3 class="footer_title">Nos Hébergements</h3>
+                    <h3 class="footer_title">Nos hébergements</h3>
                     <a class="footer_link" href="#">Charte qualité</p></a>
                     <a class="footer_link" href="#">Soumettre votre hôtel</p></a>
                 </div>
