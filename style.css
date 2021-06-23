@@ -1,6 +1,6 @@
  /* Main elements of the page */
 
- @media screen and (min-width: 992px) {
+ @media (min-width: 1075px) {
  
  html {
      min-width: 992px;
@@ -9,6 +9,7 @@
  body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
+    overflow-y: hidden;
 }
 
 #bloc_page {
@@ -365,10 +366,6 @@ nav div:last-child {
     background-color: #deebff;
 }
 
-.price_populars {
-    em;
-}
-
 .section4 {
     background-color: #FFF;
     margin-bottom: 1.4em;
@@ -455,7 +452,7 @@ nav div:last-child {
     padding-right: 3.5em;
 }
 
-/* Footer */
+/* Style for the footer */
 
 footer {
     width: 100%;
@@ -505,13 +502,13 @@ footer {
 }
 }
 
-@media screen and (max-width: 575.98px) {
+/* Style for mobile portrait devices */
+@media all and (max-device-width: 480px) {
     body {
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         width: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden; 
     }
     
     #bloc_page {
@@ -555,6 +552,14 @@ footer {
         text-decoration: none;
     }
     
+    #navigation_link_sign_up a {
+        color: #0065fc;
+        font-weight: 600;
+        font-size: 1.1em;
+        position: absolute;
+        left: 15.5em;
+        top: 2.5em;
+    }
     #navigation_link_activities a {
         font-size: 1.1em;
         color: black;
@@ -574,20 +579,18 @@ footer {
         left: 2.5em;
     }
     
-    #navigation_link_sign_up a {
-        color: #0065fc;
-        font-weight: 600;
-        font-size: 1.1em;
+
+    .header_navigation #navigation_link_lodgings .underline_effect {
+        
+        height: 3px;
         position: absolute;
-        left: 15.5em;
-        top: 2.5em;
+        top: 2em;
+        right: -25%;
+        width: 200%;
+        background: white;
     }
     
     .header_navigation #navigation_link_lodgings > .underline_effect {
-        background-color: #0065fc;
-    }
-    
-    .header_navigation #navigation_link_activities:hover > .underline_effect {
         background-color: #0065fc;
     }
     
@@ -596,13 +599,17 @@ footer {
         height: 3px;
         position: absolute;
         top: 8.8em;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        width: 50%;
         background: white;
     }
     
     .header_navigation #navigation_link_activities > .underline_effect {
         background-color: #F2F2F2;
+    }
+    
+    .header_navigation #navigation_link_activities:hover > .underline_effect {
+        background-color: #0065fc;
     }
     
     /* Research part for mobile devices*/
@@ -926,6 +933,7 @@ footer {
         position: absolute;
         top: 259em;
         left: 0;
+        right: 0;
         width: 100%;
         height: 30.5em;
         background: #F2F2F2;
@@ -957,7 +965,8 @@ footer {
     }
     }
 
-    @media screen and (min-width: 575.98px) and (max-width: 767.98px) {
+    /* Style for mobile landscape and tablet */
+    @media screen and (min-width: 480px) and (max-device-width: 1075px) {
             body {
                 font-family: "Raleway", Arial, Helvetica, sans-serif;
                 width: 100%;
@@ -1076,7 +1085,7 @@ footer {
                 display: inline-flex;
                 flex-direction: row;
                 margin-left: 1.4em;
-                margin-top: 10em;
+                margin-top: 9em;
             }
             
             .map_icon {
@@ -1124,7 +1133,7 @@ footer {
             
             #title_filters{
                 position: absolute;
-                top: 17.8em;
+                top: 13em;
                 left: 1.2em;
                 margin-top: 1.8em;
                 font-size: 1.2em;
@@ -1143,7 +1152,7 @@ footer {
             .filter_economical {
                 width: 11.5em;
                 position: absolute;
-                top:26em;
+                top:20em;
                 left: 1em;
                 margin-left: 0.2em;
             }
@@ -1151,7 +1160,7 @@ footer {
             .filter_family {
                 width: 9em;
                 position: absolute;
-                top: 26em;
+                top: 20em;
                 left: 12.2em;
                 padding-right: 0.3em;
                 margin-left: 1em;
@@ -1160,8 +1169,8 @@ footer {
             .filter_romantic {
                 width: 10.5em;
                 position: absolute;
-                top: 30.2em;
-                left: 0.2em;
+                top: 20em;
+                left: 22em;
                 margin-left: 1em;
                 padding-right: 0.7em;
              }
@@ -1169,7 +1178,7 @@ footer {
              .filter_authorized_animals {
                  width: 232px;
                  position: absolute;
-                 top: 34.3em;
+                 top: 24em;
                  left: 0.2em;
                  margin-left: 1em;
              }
@@ -1192,9 +1201,9 @@ footer {
             }
             
             .info_sentence {
-                font-size: 1em;
+                font-size: 1.2em;
                 position: absolute;
-                top: 39.5em;
+                top: 25em;
                 left: 1.1em;
                 margin-right: 0.1em;
             }
@@ -1216,23 +1225,23 @@ footer {
                 width: 100%;
                 height: 37em;
                 position: absolute;
-                top: 44.5em;
+                top: 33em;
                 left: 0;
             }
             
             .arrow_chart {
                 position: absolute;
-                top: 1.6em;
-                left: 13.2em;
-                font-size: 25px;
+                top: 1.4em;
+                left: 85%;
+                font-size: 30px;
             }
             
             .most_populars_title {
                 color: rgba(0, 0, 0, 0.92);
                 position: absolute;
-                left: 0.8em;
+                left: 1em;
                 margin-top: 40px;
-                font-size: 24px;
+                font-size: 1.8em;
             }
             
             #container_Les_plus_populaires {
@@ -1244,7 +1253,7 @@ footer {
             .popular_boxes {
                 background-color: #FFF;
                 border-radius: 20px;
-                width: 20.8em;
+                width: 45em;
                 height: 9em;
                 margin-bottom: 1em;
                 box-shadow: 0px 0px 6px 0px #0000002e;
@@ -1254,6 +1263,7 @@ footer {
             .img_most_populars {
                 float: left;
                 height: 8.3em;
+                width: 12em;
                 border-top-left-radius: 15px;
                 border-bottom-left-radius: 15px;
                 margin-top: 0.3em;
@@ -1262,15 +1272,15 @@ footer {
             }
             
             h3 {
-                font-size: 1.1em;
-                margin-bottom: 3px;
+                font-size: 1.3em;
+                margin-bottom: 0.1em;
             }
             
             /* section2 for mobile devices */
             .section2 {
                 background-color:#FFF;
                 position: absolute;
-                top: 79.8em;
+                top: 70em;
                 left: 0.2em;
                 margin-left: 0em;
                 border-radius: 25px;
@@ -1281,14 +1291,19 @@ footer {
                 margin-top: 2.7em;
                 margin-left: 0.8em;
                 color: rgba(0, 0, 0, 0.92);
-                font-size: 1.5em;
+                font-size: 1.8em;
+            }
+
+            #container_lodgings {
+                display: flex;
+                flex-wrap: wrap;
             }
             
             .lodgings_boxes {
                 background-color: #FFF;
                 border-radius: 25px;
                 width: 21em;
-                height: 12em;
+                height: 13em;
                 margin-bottom: 2em;
                 margin-left: 1.2em;
                 box-shadow: 0px 0px 6px 0px #0000002e;
@@ -1308,35 +1323,36 @@ footer {
                 margin-top: 0.1em;
                 margin-bottom: 2px;
                 margin-left: 1em;
-                font-size: 1em;
+                font-size: 1.3em;
             }
             
             .price {
                 margin-top: 1px;
                 margin-bottom: 2px;
-                margin-left: 1em;
-                font-size: 0.9em;    
+                margin-left: 1.2em;
+                font-size: 1.em;    
             }
             
             #view_more_title {
-                margin-top: 2.3em;
+                margin-top: 0.5em;
                 margin-left: 1.3em;
-                font-size: 1.1em;
+                font-size: 1.4em;
             }
             
             /* section4 for mobile devices */
             .section4 {
                 background-color: #FFF;
                 position: absolute;
-                top: 173em;
+                top: 128em;
                 width: 100%;
                 left: 1.3em;
                 margin-bottom: 1.4em;
             }
             
-            activities_section_title {
-                margin-top: 1.7em;
-                margin-bottom: 3em;
+            #activities_section_title {
+                font-size: 1.8em;
+                margin-top: 0.7em;
+                margin-bottom: 2em;
                 margin-right: 1.7em; 
             }
             
@@ -1370,11 +1386,29 @@ footer {
                 height: 8.5em;
                 color: black;  
             }
+
+            #fort_de_pomegues_box {
+                position: absolute;
+                top: 7em ;
+                left: 23.5em;
+            }
+
+            #parc_national_des_calanques_box {
+                position: absolute;
+                top: 20.3em;
+                left: 23.5em;
+            }
+
+            #parc_longchamp_box {
+                position: absolute;
+                top: 33.6em;
+                left: 23.5em;
+            }
             
             /* Footer for mobile devices */
             footer {
                 position: absolute;
-                top: 259em;
+                top: 178em;
                 left: 0;
                 width: 100%;
                 height: 30.5em;
@@ -1406,3 +1440,4 @@ footer {
                 font-size: 1.1em;
             }
     }
+
