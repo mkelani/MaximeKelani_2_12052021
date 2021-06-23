@@ -1,15 +1,14 @@
- /* Main elements of the page */
+ /* Style for the desktops */
 
- @media (min-width: 1075px) {
+ @media screen and (min-width: 1025px) {
  
  html {
-     min-width: 992px;
+     min-width: 1025px;
  }
 
  body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
-    overflow-y: hidden;
 }
 
 #bloc_page {
@@ -503,7 +502,7 @@ footer {
 }
 
 /* Style for mobile portrait devices */
-@media all and (max-device-width: 480px) {
+@media screen and (max-width: 667px) {
     body {
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         width: 100%;
@@ -612,7 +611,7 @@ footer {
         background-color: #0065fc;
     }
     
-    /* Research part for mobile devices*/
+    /* Research part for mobile portrait devices*/
     .h1_title {
         font-size: 1.5em;
         white-space: normal;
@@ -765,7 +764,7 @@ footer {
         padding: 6px 10px 6px 10px;
     }
     
-    /* section3 for mobile devices */
+    /* section3 for mobile portrait devices */
     .section3 {
         background-color: #F2F2F2;
         margin-left: none;
@@ -823,7 +822,7 @@ footer {
         margin-bottom: 3px;
     }
     
-    /* section2 for mobile devices */
+    /* section2 for mobile portrait devices */
     .section2 {
         background-color:#FFF;
         position: absolute;
@@ -881,24 +880,24 @@ footer {
         font-size: 1.1em;
     }
     
-    /* section4 for mobile devices */
+    /* section4 for mobile portrait devices */
     .section4 {
         background-color: #FFF;
         position: absolute;
         top: 173em;
         width: 100%;
-        left: 1.3em;
         margin-bottom: 1.4em;
     }
     
-    activities_section_title {
+    #activities_section_title {
         margin-top: 1.7em;
-        margin-bottom: 3em;
-        margin-right: 1.7em; 
+        margin-bottom: 1em;
+        margin-right: 1.7em;
+        margin-left: 1em; 
     }
     
     #activities_container {
-        margin-top: 1.7em;
+        margin-top: 1em;
         margin-left: 0.1em
     }
     
@@ -909,6 +908,7 @@ footer {
         height: 11.8em;
         width: 20.8em;
         margin-right: 0.5em;
+        margin-left: 1em;
         margin-bottom: 1.5em;
     }
     
@@ -928,7 +928,7 @@ footer {
         color: black;  
     }
     
-    /* Footer for mobile devices */
+    /* Footer for mobile portrait devices */
     footer {
         position: absolute;
         top: 259em;
@@ -963,10 +963,473 @@ footer {
     .footer_link {
         font-size: 1.1em;
     }
+}
+
+    @media (min-width: 668px) and (max-width: 768px) {
+        body {
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #bloc_page {
+            width: auto;
+            margin: 0;
+        }
+        
+        .colorBlue {
+            color: #0065FC;
+        }
+        
+        .colorLightBlue {
+            color: #deebff;
+        }
+        
+        .colorGrey {
+            color: rgba(54, 54, 50, 0.2);
+        }
+        .colorWhite {
+            color: #FFF;
+        }
+        
+        /* Header for mobile devices */
+        #logo_img {
+            padding-top: 1.7em;
+            padding-left: 3em;
+            height: 3em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        } 
+        
+        .header_navigation .header_active_link {
+            color: #0065FC;
+        }
+        
+        .header_navigation a {
+            color: #0065FC;
+            text-decoration: none;
+        }
+        
+        #navigation_link_sign_up a {
+            color: #0065fc;
+            font-weight: 600;
+            font-size: 1.1em;
+            position: absolute;
+            left: 80%;
+            top: 2.5em;
+        }
+        #navigation_link_activities a {
+            font-size: 1.1em;
+            color: black;
+            position: absolute;
+            top: 6em;
+            left: 73%;
+        }
+        
+        #navigation_link_activities:hover a {
+            color: #0065FC;
+        }
+        
+        #navigation_link_lodgings {
+            font-size: 1.1em;
+            position: absolute;
+            top: 6em;
+            left: 5em;
+        }
+        
+    
+        .header_navigation #navigation_link_lodgings .underline_effect {
+            
+            height: 3px;
+            position: absolute;
+            top: 2em;
+            right: -119%;
+            width: 300%;
+            background: white;
+        }
+        
+        .header_navigation #navigation_link_lodgings > .underline_effect {
+            background-color: #0065fc;
+        }
+        
+        .header_navigation #navigation_link_activities .underline_effect {
+            
+            height: 3px;
+            position: absolute;
+            top: 8.8em;
+            left: 50%;
+            width: 50%;
+            background: white;
+        }
+        
+        .header_navigation #navigation_link_activities > .underline_effect {
+            background-color: #F2F2F2;
+        }
+        
+        .header_navigation #navigation_link_activities:hover > .underline_effect {
+            background-color: #0065fc;
+        }
+        
+        /* Research part for mobile portrait devices*/
+        .h1_title {
+            font-size: 1.5em;
+            white-space: normal;
+            color: rgba(0, 0, 0, 0.92);
+            position: absolute;
+            top: 6.6em;
+            left: 2.2em;
+        }
+        
+        #subtitle {
+            font-size: 1.1em;
+            white-space: nowrap;
+            position: absolute;
+            top: 13em;
+            left: 3em;
+        }
+        
+        .research_box {
+            display: inline-flex;
+            flex-direction: row;
+            margin-left: 3em;
+            margin-top: 13.5em;
+        }
+        
+        .map_icon {
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3em;
+            height: 3em;
+            background-color: #F2F2F2;
+            border-radius: 18px 0 0 18px;
+        }
+        
+        .research_bar {
+            
+            width: 17em;
+            border: none;
+            border-top: solid 1px #F2F2F2;
+            border-bottom: solid 1px #F2F2F2;
+            padding: 0 0 0 20px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        
+        ::placeholder {
+            font-size: 1.1em;
+        }
+        
+        #button_research {
+            border: none;
+            border-radius: 0 14px 14px 0;
+            background-color: #0065fc;
+            color: #FFF;
+            height: 50px;
+            width: 125px;
+            font-weight: 700;
+            font-size: 1em;
+            padding: 17px;
+            cursor: pointer;
+        }
+        
+        #button_2 {
+            display: none;
+        }
+        
+        #title_filters{
+            position: absolute;
+            top: 17.8em;
+            left: 2.7em;
+            margin-top: 1.8em;
+            font-size: 1.2em;
+        } 
+        
+        .filter_choice {
+            border: 2.5px solid rgba(54, 54, 50, 0.2);
+            border-left: none;
+            border-radius: 200px;
+            height: 50px;
+            font-weight: bold;
+            margin-left: 30px;
+            color: rgba(0, 0, 0, 0.92);
+        }
+        
+        .filter_economical {
+            width: 15em;
+            position: absolute;
+            top:26em;
+            left: 3em;
+            margin-left: 0.2em;
+        }
+        
+        .filter_family {
+            width: 10.5em;
+            position: absolute;
+            top: 26em;
+            left: 18em;
+            padding-right: 0.3em;
+            margin-left: 1em;
+        }
+        
+        .filter_romantic {
+            width: 10.5em;
+            position: absolute;
+            top: 30.2em;
+            left: 2.2em;
+            margin-left: 1em;
+            padding-right: 0.7em;
+         }
+        
+         .filter_authorized_animals {
+             width: 232px;
+             position: absolute;
+             top: 34.3em;
+             left: 2.2em;
+             margin-left: 1em;
+         }
+        
+        .filters_options {
+            display: inline-block;
+            align-content: space-between;
+            padding-bottom: 3em;
+            margin-top: 32px;
+        }
+        
+        .filter_icons {
+             
+            color: #0065FC;
+            background-color: #deebff;
+            border-radius: 200px;
+            margin-right: 15px;
+            padding: 18px;
+            width: 20px;
+        }
+        
+        .info_sentence {
+            font-size: 1.1em;
+            position: absolute;
+            top: 36.5em;
+            left: 3.2em;
+            margin-right: 0.1em;
+        }
+        
+        .info_icon {
+            font-size: 0.7em;
+            color: #0065FC;
+            border: 1px solid #D9D9D9;
+            border-radius: 200px;
+            margin-right: 0.5em;
+            padding: 6px 10px 6px 10px;
+        }
+        
+        /* section3 for mobile portrait devices */
+        .section3 {
+            background-color: #F2F2F2;
+            margin-left: none;
+            padding-left: 30px;
+            width: 100%;
+            height: 37em;
+            position: absolute;
+            top: 44.5em;
+            left: 0;
+        }
+        
+        .arrow_chart {
+            position: absolute;
+            top: 1.6em;
+            left: 85%;
+            font-size: 25px;
+        }
+        
+        .most_populars_title {
+            color: rgba(0, 0, 0, 0.92);
+            position: absolute;
+            left: 0.8em;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        
+        #container_Les_plus_populaires {
+            position: absolute;
+            top: 4.7em;
+            left: 1.4em;
+        }
+        
+        .popular_boxes {
+            background-color: #FFF;
+            border-radius: 20px;
+            width: 200%;
+            height: 9em;
+            margin-bottom: 1em;
+            box-shadow: 0px 0px 6px 0px #0000002e;
+            color: black;
+        }
+        
+        .img_most_populars {
+            float: left;
+            height: 8.3em;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-top: 0.3em;
+            padding-left: 0.2em;
+            padding-right: 1.2em;
+        }
+        
+        h3 {
+            font-size: 1.1em;
+            margin-bottom: 3px;
+        }
+        
+        /* section2 for mobile portrait devices */
+        .section2 {
+            background-color:#FFF;
+            position: absolute;
+            top: 79.8em;
+            left: 0.2em;
+            margin-left: 0em;
+            border-radius: 25px;
+            height: 39em;
+        }
+        
+        #lodgings_section_title {
+            margin-top: 2.7em;
+            margin-left: 7em;
+            color: rgba(0, 0, 0, 0.92);
+            font-size: 1.5em;
+        }
+        
+        .lodgings_boxes {
+            background-color: #FFF;
+            border-radius: 25px;
+            width: 21em;
+            height: 12em;
+            margin-bottom: 2em;
+            margin-left: 10em;
+            box-shadow: 0px 0px 6px 0px #0000002e;
+            color:black
+        }
+        
+        .lodgings_img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-left: 0.1em;
+            padding: 0.3em;
+            height: 7.2em;
+            width: 96%;
+        }
+        
+        .place_name {
+            margin-top: 0.1em;
+            margin-bottom: 2px;
+            margin-left: 1em;
+            font-size: 1em;
+        }
+        
+        .price {
+            margin-top: 1px;
+            margin-bottom: 2px;
+            margin-left: 1em;
+            font-size: 0.9em;    
+        }
+        
+        #view_more_title {
+            margin-top: 2.3em;
+            margin-left: 9.5em;
+            font-size: 1.1em;
+        }
+        
+        /* section4 for mobile portrait devices */
+        .section4 {
+            background-color: #FFF;
+            position: absolute;
+            top: 173em;
+            width: 100%;
+            left: 25%;
+            margin-bottom: 1.4em;
+        }
+        
+        #activities_section_title {
+            margin-top: 1.7em;
+            margin-bottom: 3em;
+            margin-left: 1.3em; 
+        }
+        
+        #activities_container {
+            margin-top: 1.7em;
+            margin-left: 0.1em
+        }
+        
+        .activities_boxes {
+            border-radius: 25px;
+            box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+            color: black;
+            height: 11.8em;
+            width: 20.8em;
+            margin-right: 0.5em;
+            margin-bottom: 1.5em;
+        }
+        
+        .activities_parts_titles {
+            font-size: 1.1em;
+            margin-top: 13px;
+            margin-left: 20px;
+            padding-bottom: 20px;
+            color: rgba(0, 0, 0, 0.92)
+        }
+        
+        .activities_img {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            width: 100%;
+            height: 8.5em;
+            color: black;  
+        }
+        
+        /* Footer for mobile portrait devices */
+        footer {
+            position: absolute;
+            top: 259em;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 30.5em;
+            background: #F2F2F2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: none;
+        }
+        
+        .footer_navigation {
+            margin-left: 27%;
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+        }
+        
+        .footer_block {
+            margin-block: 2.5em;
+        }
+        
+        .footer_title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: rgba(15, 15, 1, 0.99);
+            font-weight: bold;
+        }
+        
+        .footer_link {
+            font-size: 1.1em;
+        }
     }
 
-    /* Style for mobile landscape and tablet */
-    @media screen and (min-width: 480px) and (max-device-width: 1075px) {
+    /* Style for tablet portrait */
+    @media screen and (min-width: 768px) and (max-width: 992px) {
             body {
                 font-family: "Raleway", Arial, Helvetica, sans-serif;
                 width: 100%;
@@ -1253,7 +1716,7 @@ footer {
             .popular_boxes {
                 background-color: #FFF;
                 border-radius: 20px;
-                width: 45em;
+                width: 190%;
                 height: 9em;
                 margin-bottom: 1em;
                 box-shadow: 0px 0px 6px 0px #0000002e;
@@ -1441,3 +1904,477 @@ footer {
             }
     }
 
+    @media screen and (min-width: 992px) and (max-width: 1024px) {
+        body {
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+        
+        #bloc_page {
+            width: auto;
+            margin: 0;
+        }
+        
+        .colorBlue {
+            color: #0065FC;
+        }
+        
+        .colorLightBlue {
+            color: #deebff;
+        }
+        
+        .colorGrey {
+            color: rgba(54, 54, 50, 0.2);
+        }
+        .colorWhite {
+            color: #FFF;
+        }
+        
+        /* Header for mobile devices */
+        #logo_img {
+            padding-top: 0.5em;
+            padding-left: 1.5em;
+            height: 3em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        } 
+        
+        .header_navigation .header_active_link {
+            color: #0065FC;
+        }
+        
+        .header_navigation a {
+            color: #0065FC;
+            text-decoration: none;
+        }
+        
+        #navigation_link_activities a {
+            font-size: 1.1em;
+            color: black;
+            position: absolute;
+            top: 1em;
+            left: 60%;
+        }
+        
+        #navigation_link_activities:hover a {
+            color: #0065FC;
+        }
+        
+        #navigation_link_lodgings {
+            font-size: 1.1em;
+            position: absolute;
+            top: 1em;
+            left: 35%;
+        }
+        
+        #navigation_link_sign_up a {
+            color: #0065fc;
+            font-weight: 600;
+            font-size: 1.1em;
+            position: absolute;
+            left: 80%;
+            top: 1em;
+        }
+        
+        .header_navigation #navigation_link_lodgings > .underline_effect {
+            background-color: #0065fc;
+        }
+        
+        .header_navigation #navigation_link_activities:hover > .underline_effect {
+            background-color: #0065fc;
+        }
+        
+        .header_navigation #navigation_link_activities .underline_effect {
+            
+            height: 3px;
+            position: absolute;
+            top: 4em;
+            left: 0;
+            width: 100%;
+            background: #0065fc;
+        }
+        
+        
+        /* Research part for mobile devices*/
+        .h1_title {
+            font-size: 1.7em;
+            white-space: normal;
+            color: rgba(0, 0, 0, 0.92);
+            position: absolute;
+            top: 3em;
+            left: 0.9em;
+        }
+        
+        #subtitle {
+            font-size: 1.3em;
+            white-space: nowrap;
+            position: absolute;
+            top: 6.5em;
+            left: 1.5em;
+        }
+        
+        .research_box {
+            display: inline-flex;
+            flex-direction: row;
+            margin-left: 1.4em;
+            margin-top: 9em;
+        }
+        
+        .map_icon {
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 7em;
+            height: 3em;
+            background-color: #F2F2F2;
+            border-radius: 18px 0 0 18px;
+        }
+        
+        .research_bar {
+            
+            width: 90%;
+            border: none;
+            border-top: solid 1px #F2F2F2;
+            border-bottom: solid 1px #F2F2F2;
+            padding: 0 0 0 20px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        
+        ::placeholder {
+            font-size: 1.1em;
+        }
+        
+        #button_research {
+            border: none;
+            border-radius: 0 14px 14px 0;
+            background-color: #0065fc;
+            color: #FFF;
+            height: 50px;
+            width: 150px;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 17px;
+            cursor: pointer;
+        }
+        
+        #button_2 {
+            display: none;
+        }
+        
+        #title_filters{
+            position: absolute;
+            top: 13em;
+            left: 1.2em;
+            margin-top: 1.8em;
+            font-size: 1.2em;
+        } 
+        
+        .filter_choice {
+            border: 2.5px solid rgba(54, 54, 50, 0.2);
+            border-left: none;
+            border-radius: 200px;
+            height: 50px;
+            font-weight: bold;
+            margin-left: 30px;
+            color: rgba(0, 0, 0, 0.92);
+        }
+        
+        .filter_economical {
+            width: 11.5em;
+            position: absolute;
+            top:20em;
+            left: 1em;
+            margin-left: 0.2em;
+        }
+        
+        .filter_family {
+            width: 9em;
+            position: absolute;
+            top: 20em;
+            left: 12.2em;
+            padding-right: 0.3em;
+            margin-left: 1em;
+        }
+        
+        .filter_romantic {
+            width: 10.5em;
+            position: absolute;
+            top: 20em;
+            left: 22em;
+            margin-left: 1em;
+            padding-right: 0.7em;
+         }
+        
+         .filter_authorized_animals {
+             width: 232px;
+             position: absolute;
+             top: 24em;
+             left: 0.2em;
+             margin-left: 1em;
+         }
+        
+        .filters_options {
+            display: inline-block;
+            align-content: space-between;
+            padding-bottom: 3em;
+            margin-top: 32px;
+        }
+        
+        .filter_icons {
+             
+            color: #0065FC;
+            background-color: #deebff;
+            border-radius: 200px;
+            margin-right: 15px;
+            padding: 18px;
+            width: 20px;
+        }
+        
+        .info_sentence {
+            font-size: 1.2em;
+            position: absolute;
+            top: 25em;
+            left: 1.1em;
+            margin-right: 0.1em;
+        }
+        
+        .info_icon {
+            font-size: 0.7em;
+            color: #0065FC;
+            border: 1px solid #D9D9D9;
+            border-radius: 200px;
+            margin-right: 0.5em;
+            padding: 6px 10px 6px 10px;
+        }
+        
+        /* section3 for mobile devices */
+        .section3 {
+            background-color: #F2F2F2;
+            margin-left: none;
+            padding-left: 30px;
+            width: 100%;
+            height: 37em;
+            position: absolute;
+            top: 33em;
+            left: 0;
+        }
+        
+        .arrow_chart {
+            position: absolute;
+            top: 1.4em;
+            left: 85%;
+            font-size: 30px;
+        }
+        
+        .most_populars_title {
+            color: rgba(0, 0, 0, 0.92);
+            position: absolute;
+            left: 1em;
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
+        
+        #container_Les_plus_populaires {
+            position: absolute;
+            top: 4.7em;
+            left: 1.4em;
+        }
+        
+        .popular_boxes {
+            background-color: #FFF;
+            border-radius: 20px;
+            width: 190%;
+            height: 9em;
+            margin-bottom: 1em;
+            box-shadow: 0px 0px 6px 0px #0000002e;
+            color: black;
+        }
+        
+        .img_most_populars {
+            float: left;
+            height: 8.3em;
+            width: 12em;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-top: 0.3em;
+            padding-left: 0.2em;
+            padding-right: 1.2em;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.1em;
+        }
+        
+        /* section2 for mobile devices */
+        .section2 {
+            background-color:#FFF;
+            position: absolute;
+            top: 70em;
+            left: 0.2em;
+            margin-left: 0em;
+            border-radius: 25px;
+            height: 39em;
+        }
+        
+        #lodgings_section_title {
+            margin-top: 2.7em;
+            margin-left: 0.8em;
+            color: rgba(0, 0, 0, 0.92);
+            font-size: 1.8em;
+        }
+
+        #container_lodgings {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .lodgings_boxes {
+            background-color: #FFF;
+            border-radius: 25px;
+            width: 21em;
+            height: 13em;
+            margin-bottom: 2em;
+            margin-left: 1.2em;
+            box-shadow: 0px 0px 6px 0px #0000002e;
+            color:black
+        }
+        
+        .lodgings_img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-left: 0.1em;
+            padding: 0.3em;
+            height: 7.2em;
+            width: 96%;
+        }
+        
+        .place_name {
+            margin-top: 0.1em;
+            margin-bottom: 2px;
+            margin-left: 1em;
+            font-size: 1.3em;
+        }
+        
+        .price {
+            margin-top: 1px;
+            margin-bottom: 2px;
+            margin-left: 1.2em;
+            font-size: 1.em;    
+        }
+        
+        #view_more_title {
+            margin-top: 0.5em;
+            margin-left: 1.3em;
+            font-size: 1.4em;
+        }
+        
+        /* section4 for mobile devices */
+        .section4 {
+            background-color: #FFF;
+            position: absolute;
+            top: 128em;
+            width: 100%;
+            left: 1.3em;
+            margin-bottom: 1.4em;
+        }
+        
+        #activities_section_title {
+            font-size: 1.8em;
+            margin-top: 0.7em;
+            margin-bottom: 2em;
+            margin-right: 1.7em; 
+        }
+        
+        #activities_container {
+            margin-top: 1.7em;
+            margin-left: 0.1em
+        }
+        
+        .activities_boxes {
+            border-radius: 25px;
+            box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+            color: black;
+            height: 11.8em;
+            width: 20.8em;
+            margin-right: 0.5em;
+            margin-bottom: 1.5em;
+        }
+        
+        .activities_parts_titles {
+            font-size: 1.1em;
+            margin-top: 13px;
+            margin-left: 20px;
+            padding-bottom: 20px;
+            color: rgba(0, 0, 0, 0.92)
+        }
+        
+        .activities_img {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            width: 100%;
+            height: 8.5em;
+            color: black;  
+        }
+
+        #fort_de_pomegues_box {
+            position: absolute;
+            top: 7em ;
+            left: 23.5em;
+        }
+
+        #parc_national_des_calanques_box {
+            position: absolute;
+            top: 20.3em;
+            left: 23.5em;
+        }
+
+        #parc_longchamp_box {
+            position: absolute;
+            top: 33.6em;
+            left: 23.5em;
+        }
+        
+        /* Footer for mobile devices */
+        footer {
+            position: absolute;
+            top: 178em;
+            left: 0;
+            width: 100%;
+            height: 30.5em;
+            background: #F2F2F2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: none;
+        }
+        
+        .footer_navigation {
+            margin-left: 2em;
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+        }
+        
+        .footer_block {
+            margin-block: 2.5em;
+        }
+        
+        .footer_title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: rgba(15, 15, 1, 0.99);
+            font-weight: bold;
+        }
+        
+        .footer_link {
+            font-size: 1.1em;
+        }
+}
