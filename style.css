@@ -1811,6 +1811,7 @@ footer {
             font-size: 1.8em;
             margin-top: 0.7em;
             margin-bottom: 2em;
+            margin-left: 1em;
             margin-right: 1.7em; 
         }
         
@@ -1844,20 +1845,42 @@ footer {
             height: 8.5em;
             color: black;  
         }
+
+        #vieux_port_box {
+            position: absolute;
+            top: 7em ;
+            left: 2em;
+        }
+
         #fort_de_pomegues_box {
             position: absolute;
             top: 7em ;
-            left: 23.5em;
+            left: 24em;
         }
+
+        #ile_du_frioul_box {
+            position: absolute;
+            top: 20.3em;
+            left: 2em;
+        }
+
+
         #parc_national_des_calanques_box {
             position: absolute;
             top: 20.3em;
-            left: 23.5em;
+            left: 24em;
         }
+
+        #notre_dame_de_la_garde_box {
+            position: absolute;
+            top: 33.6em;
+            left: 2em;
+        }
+
         #parc_longchamp_box {
             position: absolute;
             top: 33.6em;
-            left: 23.5em;
+            left: 24em;
         }
         
         /* Footer for mobile devices */
