@@ -1019,7 +1019,7 @@ footer {
         color: black;
         position: absolute;
         top: 1em;
-        left: 60%;
+        left: 70%;
     }
     
     #navigation_link_activities:hover a {
@@ -1030,7 +1030,7 @@ footer {
         font-size: 1.1em;
         position: absolute;
         top: 1em;
-        left: 35%;
+        left: 47%;
     }
     
     #navigation_link_sign_up a {
@@ -1038,7 +1038,7 @@ footer {
         font-weight: 600;
         font-size: 1.1em;
         position: absolute;
-        left: 80%;
+        left: 85%;
         top: 1em;
     }
     
