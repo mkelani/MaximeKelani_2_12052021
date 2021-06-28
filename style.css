@@ -1938,7 +1938,7 @@ footer {
     #logo_img {
         padding-top: 0.5em;
         padding-left: 1.5em;
-        height: 3em;
+        height: 3.5em;
     }
     
     a {
@@ -1959,7 +1959,7 @@ footer {
         font-size: 1.1em;
         color: black;
         position: absolute;
-        top: 1em;
+        top: 1.5em;
         left: 70%;
     }
     
@@ -1970,7 +1970,7 @@ footer {
     #navigation_link_lodgings {
         font-size: 1.1em;
         position: absolute;
-        top: 1em;
+        top: 1.5em;
         left: 50%;
     }
     
@@ -1980,7 +1980,7 @@ footer {
         font-size: 1.1em;
         position: absolute;
         left: 85%;
-        top: 1em;
+        top: 1.5em;
     }
     
     .header_navigation #navigation_link_lodgings > .underline_effect {
@@ -1995,7 +1995,7 @@ footer {
         
         height: 3px;
         position: absolute;
-        top: 4em;
+        top: 4.5em;
         left: 0;
         width: 100%;
         background: #0065fc;
@@ -2017,14 +2017,14 @@ footer {
         white-space: nowrap;
         position: absolute;
         top: 6.5em;
-        left: 1.5em;
+        left: 1.2em;
     }
     
     .research_box {
         display: inline-flex;
         flex-direction: row;
-        margin-left: 1.4em;
         margin-top: 9em;
+        margin-left: 1.5em;
     }
     
     .map_icon {
@@ -2073,7 +2073,7 @@ footer {
     #title_filters{
         position: absolute;
         top: 13em;
-        left: 1.2em;
+        left: 1.4em;
         margin-top: 1.8em;
         font-size: 1.2em;
     } 
@@ -2092,7 +2092,7 @@ footer {
         width: 11.5em;
         position: absolute;
         top:20em;
-        left: 1em;
+        left: 1.3em;
         margin-left: 0.2em;
     }
     
@@ -2100,7 +2100,7 @@ footer {
         width: 9em;
         position: absolute;
         top: 20em;
-        left: 12.2em;
+        left: 13em;
         padding-right: 0.3em;
         margin-left: 1em;
     }
@@ -2109,7 +2109,7 @@ footer {
         width: 10.5em;
         position: absolute;
         top: 20em;
-        left: 22em;
+        left: 23.5em;
         margin-left: 1em;
         padding-right: 0.7em;
      }
@@ -2118,8 +2118,8 @@ footer {
          width: 232px;
          position: absolute;
          top: 24em;
-         left: 0.2em;
-         margin-left: 1em;
+         left: 0em;
+         margin-left: 1.5em;
      }
     
     .filters_options {
@@ -2143,7 +2143,7 @@ footer {
         font-size: 1.2em;
         position: absolute;
         top: 25em;
-        left: 1.1em;
+        left: 1.5em;
         margin-right: 0.1em;
     }
     
@@ -2185,7 +2185,7 @@ footer {
     #container_Les_plus_populaires {
         position: absolute;
         top: 4.7em;
-        left: 1.4em;
+        left: 1.8em;
     }
     
     .popular_boxes {
