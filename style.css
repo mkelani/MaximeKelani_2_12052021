@@ -2180,7 +2180,7 @@ footer {
         position: absolute;
         left: 1em;
         margin-top: 40px;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
     #container_Les_plus_populaires {
@@ -2228,9 +2228,9 @@ footer {
     
     #lodgings_section_title {
         margin-top: 2em;
-        margin-left: 12em;
+        margin-left: 5em;
         color: rgba(0, 0, 0, 0.92);
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     #container_lodgings {
         display: flex;
@@ -2288,10 +2288,10 @@ footer {
     }
     
     #activities_section_title {
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin-top: 0.7em;
         margin-bottom: 2em;
-        margin-left: 12.5em;
+        margin-left: 5em;
         margin-right: 1.7em; 
     }
     
