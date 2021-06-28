@@ -1675,21 +1675,21 @@ footer {
             left: 0;
         }
         
+        .most_populars_title {
+            color: rgba(0, 0, 0, 0.92);
+            position: absolute;
+            left: 1em;
+            margin-top: 40px;
+            font-size: 1.6em;
+        }
+        
         .arrow_chart {
             position: absolute;
             top: 1.4em;
             left: 85%;
             font-size: 30px;
         }
-        
-        .most_populars_title {
-            color: rgba(0, 0, 0, 0.92);
-            position: absolute;
-            left: 1em;
-            margin-top: 40px;
-            font-size: 1.8em;
-        }
-        
+
         #container_Les_plus_populaires {
             position: absolute;
             top: 4.7em;
@@ -1734,10 +1734,11 @@ footer {
         }
         
         #lodgings_section_title {
-            margin-top: 2.7em;
+            margin-top: 2.5em;
+            margin-bottom: 1.5em;
             margin-left: 0.8em;
             color: rgba(0, 0, 0, 0.92);
-            font-size: 1.8em;
+            font-size: 1.6em;
         }
         #container_lodgings {
             display: flex;
@@ -1794,9 +1795,9 @@ footer {
         }
         
         #activities_section_title {
-            font-size: 1.8em;
+            font-size: 1.6em;
             margin-top: 0.7em;
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
             margin-left: 1em;
             margin-right: 1.7em; 
         }
@@ -1834,13 +1835,13 @@ footer {
 
         #vieux_port_box {
             position: absolute;
-            top: 7em ;
+            top: 6em ;
             left: 2em;
         }
 
         #fort_de_pomegues_box {
             position: absolute;
-            top: 7em ;
+            top: 6em ;
             left: 24em;
         }
 
@@ -1859,13 +1860,13 @@ footer {
 
         #notre_dame_de_la_garde_box {
             position: absolute;
-            top: 33.6em;
+            top: 34.5em;
             left: 2em;
         }
 
         #parc_longchamp_box {
             position: absolute;
-            top: 33.6em;
+            top: 34.5em;
             left: 24em;
         }
         
