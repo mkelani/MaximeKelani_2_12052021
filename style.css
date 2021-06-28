@@ -1071,10 +1071,10 @@ footer {
     }
     
     #subtitle {
-        font-size: 1em;
+        font-size: 1.2em;
         white-space: nowrap;
         position: absolute;
-        top: 8em;
+        top: 6.5em;
         left: 1.3em;
     }
     
@@ -1198,9 +1198,9 @@ footer {
     }
     
     .info_sentence {
-        font-size: 1em;
+        font-size: 1.2em;
         position: absolute;
-        top: 32em;
+        top: 26.5em;
         left: 1.1em;
         margin-right: 0.1em;
     }
