@@ -1141,6 +1141,7 @@ footer {
         border-left: none;
         border-radius: 200px;
         height: 50px;
+        font-size: 1.1em;
         font-weight: bold;
         margin-left: 30px;
         color: rgba(0, 0, 0, 0.92);
@@ -1149,7 +1150,7 @@ footer {
     .filter_economical {
         width: 14em;
         position: absolute;
-        top:19em;
+        top:17em;
         left: 1em;
         margin-left: 0.2em;
     }
@@ -1157,7 +1158,7 @@ footer {
     .filter_family {
         width: 11.5em;
         position: absolute;
-        top: 19em;
+        top: 17em;
         left: 15em;
         padding-right: 0.3em;
         margin-left: 1em;
@@ -1166,7 +1167,7 @@ footer {
     .filter_romantic {
         width: 12em;
         position: absolute;
-        top: 23em;
+        top: 21em;
         left: 0.2em;
         margin-left: 1em;
         padding-right: 0.7em;
@@ -1175,7 +1176,7 @@ footer {
      .filter_authorized_animals {
          width: 16em;
          position: absolute;
-         top: 27em;
+         top: 25em;
          left: 0.2em;
          margin-left: 1em;
      }
@@ -1200,7 +1201,7 @@ footer {
     .info_sentence {
         font-size: 1.2em;
         position: absolute;
-        top: 26.5em;
+        top: 27em;
         left: 1.1em;
         margin-right: 0.1em;
     }
