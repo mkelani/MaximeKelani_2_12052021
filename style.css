@@ -1960,7 +1960,7 @@ footer {
         color: black;
         position: absolute;
         top: 1em;
-        left: 60%;
+        left: 70%;
     }
     
     #navigation_link_activities:hover a {
@@ -1971,7 +1971,7 @@ footer {
         font-size: 1.1em;
         position: absolute;
         top: 1em;
-        left: 35%;
+        left: 50%;
     }
     
     #navigation_link_sign_up a {
@@ -1979,7 +1979,7 @@ footer {
         font-weight: 600;
         font-size: 1.1em;
         position: absolute;
-        left: 80%;
+        left: 85%;
         top: 1em;
     }
     
@@ -2268,7 +2268,7 @@ footer {
         margin-top: 1px;
         margin-bottom: 2px;
         margin-left: 1.2em;
-        font-size: 1.em;    
+        font-size: 1em;    
     }
     
     #view_more_title {
@@ -2290,7 +2290,7 @@ footer {
         font-size: 1.8em;
         margin-top: 0.7em;
         margin-bottom: 2em;
-        margin-left:12.5em;
+        margin-left: 12.5em;
         margin-right: 1.7em; 
     }
     
