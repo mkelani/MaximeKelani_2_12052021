@@ -118,7 +118,7 @@
     }
 
     /* First section for desktop's design */
-    .section_1 {
+    #section_1 {
         background-color: #FFF;
     }
 
@@ -226,7 +226,7 @@
         width: 235px;
     }
 
-    .info_sentence {
+    #info_sentence {
         margin-top: 1.7em;
         margin-bottom: 2.3em;
         margin-left: 2.5em;
@@ -242,7 +242,7 @@
     }
 
     /* Second section for desktop's design */
-    .section_2 {
+    #section_2 {
         background-color: #F2F2F2;
         margin-top: 1.5em;
         margin-left: 2.5em;
@@ -307,7 +307,7 @@
     }
 
     /* Third section for desktop's design*/
-    .section_3 {
+    #section_3 {
         background-color: #F2F2F2;
         margin-left: 30px;
         padding-left: 30px;
@@ -361,7 +361,7 @@
     }
 
     /* Section four for desktop's design */
-    .section_4 {
+    #section_4 {
         background-color: #FFF;
         margin-bottom: 1.4em;
     }
@@ -460,7 +460,7 @@
 
     }
 
-    .footer_navigation {
+    #footer_navigation {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -603,7 +603,7 @@
     }
     
     /* First section for mobile's portrait orientation design*/
-    .section_1 {
+    #section_1 {
         background-color: #FFF;
     }
 
@@ -741,7 +741,7 @@
         width: 20px;
     }
     
-    .info_sentence {
+    #info_sentence {
         font-size: 1em;
         position: absolute;
         top: 39.5em;
@@ -759,7 +759,7 @@
     }
     
     /* section3 for mobile's portrait orientation design */
-    .section_3 {
+    #section_3 {
         background-color: #F2F2F2;
         width: 100%;
         height: 37em;
@@ -815,7 +815,7 @@
     }
     
     /* section2 for mobile's portrait orientation design */
-    .section_2 {
+    #section_2 {
         background-color:#FFF;
         position: absolute;
         top: 79.8em;
@@ -873,7 +873,7 @@
     }
     
     /* section4 for mobile's portrait orientation design */
-    .section_4 {
+    #section_4 {
         background-color: #FFF;
         position: absolute;
         top: 173em;
@@ -934,7 +934,7 @@
         justify-content: space-around;
     }
     
-    .footer_navigation {
+    #footer_navigation {
         margin-left: 2em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
@@ -1046,7 +1046,7 @@
     }
     
     /* First section for mobile's landscape orientation design */
-    .section_1 {
+    #section_1 {
         background-color: #FFF;
     }
 
@@ -1186,7 +1186,7 @@
         width: 20px;
     }
     
-    .info_sentence {
+    #info_sentence {
         font-size: 1.2em;
         position: absolute;
         top: 27em;
@@ -1204,7 +1204,7 @@
     }
     
     /* section3 for mobile's landscape orientation design */
-    .section_3 {
+    #section_3 {
         background-color: #F2F2F2;
         width: 100%;
         height: 37em;
@@ -1260,7 +1260,7 @@
     }
     
     /* section2 for mobile's landscape orientation design */
-    .section_2 {
+    #section_2 {
         background-color:#FFF;
         position: absolute;
         top: 71em;
@@ -1317,7 +1317,7 @@
     }
     
     /* section4 for mobile's landscape orientation design */
-    .section_4 {
+    #section_4 {
         background-color: #FFF;
         position: absolute;
         top: 164em;
@@ -1378,7 +1378,7 @@
         justify-content: space-around;
     }
     
-    .footer_navigation {
+    #footer_navigation {
         margin-left: 10.5em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
@@ -1490,7 +1490,7 @@
     }
     
      /* First section for tablet's portrait orientation design */
-     .section_1 {
+     #section_1 {
         background-color: #FFF;
     }
 
@@ -1629,7 +1629,7 @@
         width: 20px;
     }
     
-    .info_sentence {
+    #info_sentence {
         font-size: 1.2em;
         position: absolute;
         top: 25em;
@@ -1647,7 +1647,7 @@
     }
     
     /* section3 for tablet's portrait orientation design */
-    .section_3 {
+    #section_3 {
         background-color: #F2F2F2;
         width: 100%;
         height: 37em;
@@ -1704,7 +1704,7 @@
     }
     
     /* section2 for tablet's portrait orientation design */
-    .section_2 {
+    #section_2 {
         background-color:#FFF;
         position: absolute;
         top: 70em;
@@ -1768,7 +1768,7 @@
     }
     
     /* section4 for tablet's portrait orientation design */
-    .section_4 {
+    #section_4 {
         background-color: #FFF;
         position: absolute;
         top: 128em;
@@ -1864,7 +1864,7 @@
         justify-content: space-around;
     }
     
-    .footer_navigation {
+    #footer_navigation {
         margin-left: 2em;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
@@ -1975,7 +1975,7 @@
     }
 
     /* First section for tablet's landscape orientation design */
-    .section_1 {
+    #section_1 {
         background-color: #FFF;
     }
 
@@ -2114,7 +2114,7 @@
         width: 20px;
     }
     
-    .info_sentence {
+    #info_sentence {
         font-size: 1.2em;
         position: absolute;
         top: 25em;
@@ -2132,7 +2132,7 @@
     }
     
     /* section3 for tablet's landscape orientation design */
-    .section_3 {
+    #section_3 {
         background-color: #F2F2F2;
         width: 100%;
         height: 37em;
