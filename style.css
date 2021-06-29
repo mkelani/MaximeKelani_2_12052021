@@ -15,10 +15,6 @@
     margin: auto;
     }
 
-    .borderNone {
-    border: none;
-    }
-
     .colorBlue {
         color: #0065FC;
     }
@@ -452,7 +448,7 @@
         padding-right: 3.5em;
     }
 
-    /* CSS for the footer for desktop's design */
+    /* Footer for desktop's design */
 
     footer {
         width: 100%;
@@ -511,12 +507,7 @@
         margin: 0;
         padding: 0;
     }
-    
-    #bloc_page {
-        width: auto;
-        margin: 0;
-    }
-    
+
     .colorBlue {
         color: #0065FC;
     }
@@ -611,7 +602,7 @@
         background-color: #0065fc;
     }
     
-    /* First section for desktop's portrait orientation design */
+    /* First section for mobile's portrait orientation design*/
     .section_1 {
         background-color: #FFF;
     }
@@ -975,11 +966,6 @@
         padding: 0;
     }
     
-    #bloc_page {
-        width: auto;
-        margin: 0;
-    }
-    
     .colorBlue {
         color: #0065FC;
     }
@@ -1059,7 +1045,7 @@
         background: #0065fc;
     }
     
-    /* First section for desktop's portrait orientation design */
+    /* First section for mobile's landscape orientation design */
     .section_1 {
         background-color: #FFF;
     }
@@ -1414,7 +1400,7 @@
     }
 }
 
-/* Style for tablet portrait */
+/* Style for tablet's portrait orientation design */
 @media screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
     
     body {
@@ -1423,11 +1409,6 @@
         margin: 0;
         padding: 0;
         overflow-x: hidden; 
-    }
-    
-    #bloc_page {
-        width: auto;
-        margin: 0;
     }
     
     .colorBlue {
@@ -1445,7 +1426,7 @@
         color: #FFF;
     }
     
-    /* Header for mobile devices */
+    /* Header for tablet's portrait orientation design */
     #logo_img {
         padding-top: 0.5em;
         padding-left: 1.5em;
@@ -1665,7 +1646,7 @@
         padding: 6px 10px 6px 10px;
     }
     
-    /* section3 for tablet devices with orientation portrait */
+    /* section3 for tablet's portrait orientation design */
     .section_3 {
         background-color: #F2F2F2;
         width: 100%;
@@ -1722,7 +1703,7 @@
         margin-bottom: 0.1em;
     }
     
-    /* section2 for tablet devices with orientation portrait */
+    /* section2 for tablet's portrait orientation design */
     .section_2 {
         background-color:#FFF;
         position: absolute;
@@ -1786,7 +1767,7 @@
         font-size: 1.4em;
     }
     
-    /* section4 for mobile devices */
+    /* section4 for tablet's portrait orientation design */
     .section_4 {
         background-color: #FFF;
         position: absolute;
@@ -1870,7 +1851,7 @@
         left: 24em;
     }
     
-    /* Footer for mobile devices */
+    /* Footer for tablet's portrait orientation design */
     footer {
         position: absolute;
         top: 178em;
@@ -1915,11 +1896,6 @@
         overflow-x: hidden; 
     }
     
-    #bloc_page {
-        width: auto;
-        margin: 0;
-    }
-    
     .colorBlue {
         color: #0065FC;
     }
@@ -1935,7 +1911,7 @@
         color: #FFF;
     }
     
-    /* Header for mobile devices */
+    /* Header for tablet's landscape orientation design */
     #logo_img {
         padding-top: 0.5em;
         padding-left: 1.5em;
@@ -2155,7 +2131,7 @@
         padding: 6px 10px 6px 10px;
     }
     
-    /* section3 for mobile devices */
+    /* section3 for tablet's landscape orientation design */
     .section_3 {
         background-color: #F2F2F2;
         width: 100%;
@@ -2212,7 +2188,7 @@
         margin-bottom: 0.1em;
     }
     
-    /* section2 for mobile devices */
+    /* section2 for tablet's landscape orientation design */
     .section_2 {
         background-color:#FFF;
         position: absolute;
@@ -2275,7 +2251,7 @@
         font-size: 1.4em;
     }
     
-    /* section four for tablet's landscape orientation design*/
+    /* section four for tablet's landscape orientation design */
     .section_4 {
         background-color: #FFF;
         position: absolute;
@@ -2359,7 +2335,7 @@
         left: 36.2em;
     }
     
-    /* Footer for mobile devices */
+    /* Footer for tablet's landscape orientation design */
     footer {
         position: absolute;
         top: 183em;
