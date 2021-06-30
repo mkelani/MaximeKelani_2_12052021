@@ -537,10 +537,6 @@
         color: rgba(0, 0, 0, 0.92);
     } 
     
-    .header_navigation .header_active_link {
-        color: #0065FC;
-    }
-    
     .header_navigation a {
         color: #0065FC;
         text-decoration: none;
@@ -643,7 +639,6 @@
     }
     
     .research_bar {
-        
         width: 14em;
         border: none;
         border-top: solid 1px #F2F2F2;
@@ -651,6 +646,7 @@
         padding: 0 0 0 20px;
         font-size: 1em;
         text-decoration: none;
+        margin-right: -1em;
     }
     
     ::placeholder {
@@ -994,10 +990,6 @@
         color: rgba(0, 0, 0, 0.92);
     } 
     
-    .header_navigation .header_active_link {
-        color: #0065FC;
-    }
-    
     .header_navigation a {
         color: #0065FC;
         text-decoration: none;
@@ -1011,7 +1003,7 @@
         left: 70%;
     }
     
-    #navigation_link_lodgings {
+    #navigation_link_lodgings a {
         font-size: 1.1em;
         position: absolute;
         top: 1em;
@@ -1025,14 +1017,6 @@
         position: absolute;
         left: 85%;
         top: 1em;
-    }
-    
-    .header_navigation #navigation_link_lodgings > .underline_effect {
-        background-color: #0065fc;
-    }
-    
-    .header_navigation #navigation_link_activities:hover > .underline_effect {
-        background-color: #0065fc;
     }
     
     .header_navigation #navigation_link_activities .underline_effect {
@@ -2189,7 +2173,7 @@
     }
     
     /* section2 for tablet's landscape orientation design */
-    .section_2 {
+    #section_2 {
         background-color:#FFF;
         position: absolute;
         top: 70em;
@@ -2252,7 +2236,7 @@
     }
     
     /* section four for tablet's landscape orientation design */
-    .section_4 {
+    #section_4 {
         background-color: #FFF;
         position: absolute;
         top: 130em;
@@ -2348,7 +2332,7 @@
     
     }
     
-    .footer_navigation {
+    #footer_navigation {
         display: flex;
         justify-content: space-between;
         width: 100%;
