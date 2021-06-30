@@ -153,6 +153,10 @@
         text-decoration: none;
     }
 
+    .research_bar:focus {
+        outline: none;
+    }
+
     .map_icon {
         display: flex;
         justify-content: center;
@@ -649,9 +653,14 @@
         text-decoration: none;
         margin-right: -1em;
     }
+
+    .research_bar:focus {
+        outline: none;
+    }
     
     ::placeholder {
         font-size: 1.1em;
+        decoration: none;
     }
     
     #button_research {
@@ -1081,6 +1090,10 @@
         margin-right: -1em;
         font-size: 1em;
         text-decoration: none;
+    }
+
+    .research_bar:focus {
+        outline: none;
     }
     
     ::placeholder {
@@ -1525,6 +1538,10 @@
         padding: 0 0 0 20px;
         font-size: 1em;
         text-decoration: none;
+    }
+
+    .research_bar:focus {
+        outline: none;
     }
     
     ::placeholder {
@@ -2010,6 +2027,10 @@
         padding: 0 0 0 20px;
         font-size: 1em;
         text-decoration: none;
+    }
+
+    .research_bar:focus {
+        outline: none;
     }
     
     ::placeholder {
