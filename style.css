@@ -1065,7 +1065,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 7em;
+        width: 4em;
         height: 3em;
         background-color: #F2F2F2;
         border-radius: 18px 0 0 18px;
@@ -1096,7 +1096,7 @@
         border-radius: 16px 16px 16px 16px;
         background-color: #0065fc;
         color: #FFF;
-        width: 5em;
+        width: 4em;
         font-weight: 700;
         font-size: 16px;
         padding: 17px;
