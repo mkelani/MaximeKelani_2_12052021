@@ -4,6 +4,9 @@ body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin: 0;
 }
+html {
+    font-size: 100%;
+}
 #bloc-page {
     width: 80%;
     margin: auto;
@@ -38,16 +41,16 @@ a {
     grid-template-rows: 1fr;
     grid-template-areas: "logo-img . lodgings-link activities-link sign-up-link";
 }
+.header-navigation img {
+    grid-area: logo-img;
+}
 .header-navigation .header-active-link {
     color: #0065FC;
 }
 .header-navigation a {
     color: #0065FC;
     text-decoration: none;
-    padding: 3em;
-}
-.header-navigation img {
-    grid-area: logo-img;
+    margin: 3em;
 }
 .header-navigation .header-navigation-link {
     display: flex;
@@ -95,22 +98,18 @@ nav div:last-child {
 #section-1 {
     background-color: #FFF;
 }
-.h1-title {
-    color: rgba(0, 0, 0, 0.92);
-    position: absolute;
-    top: 4.5em;
-    left: 9.2em;
+.main-title-subtitle {
+    margin-top: 1.5em;
+    margin-left: 2.5em;
 }
 #subtitle {
-    position: absolute;
-    top: 9.3em;
-    left: 14em;
+    margin-top: -0.7em;
 }
 .research-box {
     display: inline-flex;
     flex-direction: row;
     margin-left: 2.5em;
-    margin-top: 5.3em;
+    margin-top: 1em;
 }
 .research-bar {
     padding: 0 0 0 20px;
@@ -131,6 +130,10 @@ nav div:last-child {
     background-color: #F2F2F2;
     border-radius: 14px 0 0 14px;
 }
+input::placeholder {
+    color: rgba(0, 0, 0, 0.92);
+    opacity: 1;
+    }
 #button-research {
     border: none;
     border-radius: 0 14px 14px 0;
@@ -190,12 +193,12 @@ nav div:last-child {
     margin-left: 2.5em;
 }
 .info-icon {
-    font-size: 1em;
+    font-size: 0.7em;
     color: #0065FC;
     border: 1px solid #D9D9D9;
     border-radius: 200px;
     margin-right: 0.5em;
-    padding: 6px 12px 6px 12px;
+    padding: 6px 10px 6px 10px;
 }
 
 /* Second section for desktop's design */
@@ -249,7 +252,7 @@ nav div:last-child {
     margin-top: 0.438em;
 }
 #view-more-title {
-    margin-top: 1.1em;
+    margin-top: 2em;
 }
 
 /* Third section for desktop's design*/
@@ -262,7 +265,7 @@ nav div:last-child {
     height: 39em;
     position: absolute;
     right: 17.5em;
-    top: 27em;
+    top: 28.5em;
 }
 .title-h2-plus-icon {
     display: flex;
@@ -299,11 +302,11 @@ nav div:last-child {
 .popular-boxes:hover {
     background-color: #deebff;
 }
-.popular-boxes .price-populars {
-    margin-top: -0.5em;
+.most-populars-names-places {
+    padding-top: 0.7em;
 }
-.populars-stars {
-    margin-top: 0.5em;
+.price-populars {
+    margin-top: -0.7em;
 }
 
 /* Section four for desktop's design */
@@ -326,7 +329,11 @@ nav div:last-child {
 .activities-img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    color: rgba(0, 0, 0, 0.92);  
+}
+.activities-boxes {
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    color: black;
 }
 .activities-boxes:hover {
     background-color: #deebff;
@@ -337,46 +344,21 @@ nav div:last-child {
     padding-bottom: 1.25em;
     color: rgba(0, 0, 0, 0.92)
 }
-#vieux-port-box {
+.vieux-port-box {
     height: 27.5em;
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
 }
-#fort-de-pomegues-box {
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    color: black;
-}
-#ile-du-frioul-box {
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    color: black;
-    position: absolute;
-    top: 90.4em;
+.ile-du-frioul-box {
     height: 10.1em;
+    margin-top: 2.2em;
 }
-#parc-national-des-calanques-box {
+.parc-national-des-calanques-box {
     height: 27.5em;
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);   
-    color: black;  
 }
-#notre-dame-de-la-garde-box {
-    width: 100%;
-    margin: 0;
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);  
-    color: black;   
-}
-#parc-longchamp-box {
-    border-radius: 20px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
-    color: rgba(15, 15, 1, 0.99);  
-    position: absolute;
-    top: 87.5em;
+.parc-longchamp-box {
     height: 13em;
+    margin-top: 1.7em;
 }
-#container-notre-dame-longchamp {
+.container-notre-dame-longchamp {
     padding-right: 3.5em;
 }
 
@@ -421,783 +403,251 @@ footer {
 
 @media screen and (min-width: 992px) and (max-width: 1024.98px) and (orientation: landscape) {
     #logo-img {
-        height: 3.8em;
-        position: absolute;
-        top: 2.5em;
-        left: 0.5em;
+        margin-left: -5em;    
     }
-    .navigation-link-lodgings a {
-        font-size: 1.3em;
-        margin-left: 43em;
-
-    }
-    .navigation-link-activities a {
-        font-size: 1.3em;
-    }
-    .navigation-link-sign-up a {
-        font-size: 1.3em;
-    }
-    .header-navigation .header-navigation-link .overline-effect {
+    .header-navigation .header-navigation-link .overline-effect{
         display: none;
+    } 
+    nav div:last-child {
+        margin-right: 0;
     }
-    .h1-title {
-        font-size: 1.7em;
-        top: 6em;
-        left: 2em;
-    }
-    #subtitle {
-        font-size: 1.3em;
-        top: 9.8em;
-        left: 2.7em;
-    }
-    .map-icon {
-        height: 4.030em;
-        width: 4em;
+    .main-title-subtitle {
+        margin-left: -2.3em;
     }
     .research-box {
-        position: absolute;
-        top: 12.2em;
-        left: 0.5em;
-    }
-    .research-bar {
-        height: 3.34em;
-    }
-    #button-research {
-        height: 3.95em;
+        margin-left: -2.2em;
     }
     .filters-options {
-        position: absolute;
-        top: 21.5em;
-        left: 7.5em;
-    }
-    #title-filters {
-        font-size: 1.3em;
-        margin-left: -5em;
-    }
-    .filter-icons {
-        padding-bottom: 1.125em;
+        margin-left: -2em;
     }
     .filter-choice {
-        height: 3.1em;
-        font-size: 1.2em;
-    }
-    .filter-economical {
-        width: 12em;
-    }
-    .filter-family {
-        width: 10.7em;
-    }
-    .filter-romantic {
-        width: 12em; 
-    }
-    .filter-authorized-animals {
-        width: 15em;
-    }
-    .info-icon {
-        font-size: 0.7em;
-        margin-right: 1em;
-        padding: 8px 12px 8px 12px;
+        font-size: 0.9em;
     }
     #info-sentence {
-        font-size: 1.3em;
-        position: absolute;
-        top: 21em;
-        left: 0.3em;
+        margin-left: -2em;
     }
     #section-2 {
-        height: 50em;
-        position: absolute;
-        top: 83em;
-        left: -2.5em;
-        width: 117.2%;
-        border-radius: 0px;
-    }
-    #lodgings-section-title {
-        font-size: 1.7em;
-    }
-    .lodgings-boxes {
-        width: 23em;
-        height: 17em;
-    }
-    .lodgings-img {
-        width: 97%;
-    }
-    .place-name {
-        font-size: 1.3em;
-    }
-    .price {
-        font-size: 1.2em;
-    }
-    #view-more-title {
-        margin-top: 2em;
-        font-size: 1.4em;
+        width: 99.6%;
+        margin-left: -2.5em;
     }
     #section-3 {
-        top: 34em; 
-        width: 122.3%;
-        left: -2em;                 
-        height: 46em;
-        border-radius: 0px;
-    }
-    .most-populars-title {
-        font-size: 1.7em;
-    }
-    .arrow-chart {
-        font-size: 1.8em;
-        margin-top: 2.3em;
-        margin-right: 2em;
+        width: 84%;
+        margin-top: 43em;
+        left: 2.2em;
     }
     .popular-boxes {
-        width: 96%;
-        height: 10.1em;
-    }
-    .img-most-populars {
-        height: 9.5em;
-        width: 16em;
-        padding-top: 0.3em;
-        padding-left: 0.3em;
-    }
-    .most-populars-names-places {
-        font-size: 1.3em;  
-        padding-top: 0.5em;
-    }
-    .popular-boxes p {
-        font-size: 1.2em;
-        margin-top: -0.5em;
+        width: 94%;
     }
     .populars-stars {
-        margin-top: 1.5em;
+        margin-top: 1em;
     }
     #section-4 {
-        position: absolute;
-        top: 135em;
-        left: 8em;
+        margin-top: 44em;
     }
-    #activities-section-title {
-        font-size: 1.7em;
+    .parc-national-des-calanques-box {
+        margin-top: 3em;
     }
-    .activities-boxes {
-        border-radius: 25px;
-        box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-        color: rgba(0, 0, 0, 0.92);
-        height: 12em;
-        width: 25em;
-        margin-right: 0.5em;
-        margin-bottom: 1.5em;
-    }
-    .activities-parts-titles {
-        font-size: 1.3em;
-        margin-top: 0.813em;
-        margin-left: 1.25em;
-        padding-bottom: 1.25em;
-        color: rgba(0, 0, 0, 0.92)
-    }
-    .activities-img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width: 100%;
-        height: 15em;
-        color: rgba(0, 0, 0, 0.92);  
-    }
-    #vieux-port-box {
-        position: absolute;
-        top: 9em ;
-        left: 2.5em;
-        height: 19em;
-    }
-    #fort-de-pomegues-box {
-        position: absolute;
-        top: 9em;
-        left: 34em;
-        height: 19em;
-    }
-    #ile-du-frioul-box {
-        position: absolute;
-        top: 31em ;
-        left: 2.5em;
-        height: 19em;
-    }
-    #parc-national-des-calanques-box {
-        position: absolute;
-        top: 31em;
-        left: 34em;
-        height: 19em;
-    }
-    #notre-dame-de-la-garde-box {
-        position: absolute;
-        top: 52.8em;
-        left: 2.5em;
-        height: 19em;
-        width: 25em;
-    }
-    #parc-longchamp-box {
-        position: absolute;
-        top: 52.8em;
-        left: 34em;
-        height: 19em;
-    }
-    footer {
-        width: 125%;
-        position: absolute;
-        top: 212em;
+    .container-notre-dame-longchamp {
+        margin-top: 3em;
+        padding-right: 0;
     }
     #footer-navigation {
-        margin-left: 15em;
+        margin-left: 12em;
     }
-    .footer-title {
-        font-size: 1.5em;
-    }
-    .footer-link {
-        font-size: 1.3em;
+    .footer-block {
+        margin-right: 9em;
     }
 }
 
 /* Style for tablet's portrait orientation design */
 @media screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
-    #logo-img {
-        height: 4em;
-        padding-top: 0.2em;
-        margin-left: 20em;
-    }
-    .header-navigation a {
-        padding-right: 1em;
-    }
-    .navigation-link-lodgings a {
-        font-size: 1.4em;
-        margin-left: 10em;
-    }
-    .navigation-link-activities a {
-        font-size: 1.4em;
-    }
-    .navigation-link-sign-up a {
-        font-size: 1.4em;
-    }
-    .header-navigation .header-navigation-link .overline-effect {
-        display: none;
-    }
-    .h1-title {
-        font-size: 1.648em;
-        top: 5.5em;
-        left: 2.2em;
-    }
-    #subtitle {
-        font-size: 1.3em;
-        top: 8.8em;
-        left: 3em;
-    }
-    .research-box {
-        margin-top: 6.5em;
-        margin-left: -1em;
-    }
-    .map-icon {
-        height: 4.7em;
-        width: 5em;
-    }
-    .research-bar {
-        height: 3.86em;
-        width: 15em;
-    }
-    ::placeholder {
-        font-size: 1.2em;
-    }
-    #button-research {
-        height: 3.54em;
-        font-size: 1.3em;
-        width: 8em;
-    }
-    #title-filters {
-        font-size: 1.5em;
-        position: absolute;
-        top: 14em;
-        left: 3em;
-    }
-    .filter-icons {
-        padding-bottom: 1.3em;
-    }
-    .filter-choice {
-        height: 3.3em;
-    }
-    .filter-economical {
-        position: absolute;
-        top: 19.5em;
-        left: 1em; 
-        width: 16em;
-        font-size: 1.3em;
-    }
-    .filter-family {
-        position: absolute;
-        top: 19.5em;
-        left: 19em;
-        width: 16em;
-        font-size: 1.3em;
-    }
-    .filter-romantic {
-        position: absolute;
-        top: 24em;
-        left: 1em;
-        width: 16em;
-        font-size: 1.3em;
-    }
-    .filter-authorized-animals {
-        position: absolute;
-        top: 24em;
-        left: 19em;
-        width: 16em;
-        font-size: 1.3em;
-    }
-    .info-icon {
-        padding: 6px 12px 6px 12px;
-    }
-    #info-sentence {
-        font-size: 1.3em;
-        position: absolute;
-        top: 27.5em;
-        left: 1em;
-    }
-    #section-2 {
-        position: absolute;
-        top: 100em;
-        left: -2.5em;
-        height: 48em;
-        width: 123.2%;
-        border-radius: 0px;
-    }
-    #lodgings-section-title {
-        font-size: 1.8em;
-    }
-    .lodgings-boxes {
-        height: 15em;
-        width: 18.1em;
-    }
-    .lodgings-img {
-        height: 8.155em;
-    }
-    .place-name {
-        font-size: 1.5em;
-    }
-    .price {
-        font-size: 1.3em;
-    }
-    #view-more-title {
-        font-size: 1.5em;
-        margin-top: 2em;
-    }
-    #section-3{
-        position: absolute;
-        top: 42em;
-        left: -2em;
-        height: 55em;
-        width: 130%;
-        border-radius: 0px;
-    }
-    .most-populars-title {
-        font-size: 1.8em;
-        margin-left: 2.3em;
-    }
-    .arrow-chart {
-        font-size: 2em;
-        margin-top: 2em;
-        margin-right: 2.4em;
-    }
-    .popular-boxes {
-        height: 13em;
-        width: 86%;
-        margin-left: 4em;
-    }
-    .img-most-populars {
-        height: 12.6em;
-    }
-    .most-populars-names-places {
-        font-size: 1.5em;
-        padding-top: 0.6em;
-    }
-    .popular-boxes p {
-        font-size: 1.3em;
-    }
-    .populars-stars {
-        font-size: 1.3em;
-        padding-top: 2em;
-    }
-    #section-4 {
-        position: absolute;
-        top:150em;
-    }
-    #activities-section-title {
-        font-size: 1.8em;
-    }
-    .activities-parts-titles {
-        font-size: 1.3em;
-    }
-    #vieux-port-box {
-        height: 30.3em;
-        width: 21em;
-        margin-left: 0.6em;
-    }
-    .vieux-port-img {
-        height: 26.5em;
-    }
-    #fort-de-pomegues-box {
-        position: absolute;
-        top: 8em;
-        left: 30em;
-        height: 17em;
-    }
-    .fort-de-pomegues-img {
-        height: 13em;
-    }
-    #ile-du-frioul-box {
-        position: absolute;
-        top: 27em;
-        left:30em;
-        height: 11.5em;
-    }
-    .ile-du-frioul-img {
-        height: 8em;
-    }
-    #parc-national-des-calanques-box {
-        position: absolute;
-        top: 41em;
-        left: 3.3em;
-        width: 21em;
-        height: 30.5em;
-    }
-    .parc-national-des-calanques-img {
-        height: 26.5em;
-    }
-    #notre-dame-de-la-garde-box {
-        position: absolute;
-        top: 40.8em;
-        left: 30em;
-        height: 14em;
-        width: 22em;
-    }
-    .notre-dame-de-la-garde-img {
-        height: 10.27em;
-    }
-    #parc-longchamp-box{
-        position: absolute;
-        top: 56em;
-        left: 30em;
-        height: 15.5em;
-    }
-    .parc-longchamp-img {
-        width: 22em;
-    }
-    footer {
-        position: absolute;
-        top: 226em;
-        width: 133.6%; 
-    }
-    #footer-navigation {
-        margin-left: 18em;
-    }
-    .footer-block {
-        margin-right: 8em;
-    }
-    .footer-title {
-        font-size: 1.5em;
-    }
-    .footer-link {
-        font-size: 1.3em;
-    }
-}
     
-/* CSS for mobile's landscape orientation design */
-@media screen and (min-width: 576px)  and (max-width: 767.98px) and (orientation: landscape) {
-    
-    /* Header for mobile's landscape orientation design */
     #logo-img {
-        padding-top: 3.8em;
-        padding-left: 1.5em;
-        height: 5em;
+        margin-left: -3em;
     }
-    .header-navigation .header-navigation-link .overline-effect {
+    .header-navigation .header-navigation-link .overline-effect{
         display: none;
-    }
+    } 
     .navigation-link-lodgings {
         position: absolute;
-        top: 0.5em;
-        left: 23em;
-        font-size: 1.5em;
+        left: 25em;
     }
     .navigation-link-activities {
         position: absolute;
-        top: 0.5em;
-        left: 33em;
-        font-size: 1.5em;
+        left: 34em;
     }
     .navigation-link-sign-up {
         position: absolute;
-        top: 0.5em;
         left: 40em;
-        font-size: 1.5em;
     }
-    .h1-title {
-        font-size: 2.2em;
-        position: absolute;
-        top: 5em;
-        left: 2.7em;
-    }
-    #subtitle {
-        font-size: 1.6em;
-        position: absolute;
-        top: 11em;
-        left: 4em;
+    .main-title-subtitle {
+        margin-left: -0.5em;
     }
     .research-box {
-        margin-top: 15.2em;
-        margin-left: 1.8em;
+        margin-left: -0.5em;
     }
-    .map-icon {
-        height: 5.5em;
-        width: 5em;
+    .filters-options {
+        margin-left: -0.5em;
     }
-    .research-bar {
-        height: 4.5em;
+    .filter-choice {
         width: 15em;
+        font-size: 0.7em;
     }
-    ::placeholder {
-        font-size: 1.5em;
+    .filters-options {
+        display: flex;
+        flex-wrap: wrap;
     }
-    #button-research {
-        height: 3.6em;
-        font-size: 1.5em;
-        width: 8em;
-    }
-    #title-filters {
-        position: absolute;
-        top: 17.5em;
-        left: 3.9em;
-        margin-top: 1.8em;
-        font-size: 1.7em;
-    } 
-    .filter-icons {
-        padding-top: 1.1em;
-    }
-    .filter-economical {
-        width: 16em;
-        font-size: 1.6em;
-        position: absolute;
-        top: 23em;
-        left: 4em;
-        margin-left: 0.2em;
-    }
-    .filter-family {
-        width: 12em;
-        font-size: 1.6em;
-        position: absolute;
-        top: 23em;
-        left: 20em;
-        padding-right: 0.3em;
-        margin-left: 1em;
-    }
-    .filter-romantic {
-        width: 15em;
-        font-size: 1.6em;
-        position: absolute;
-        top: 27em;
-        left: 2.5em;
-        padding-right: 0.7em;
-    }
-    .filter-authorized-animals {
-        width: 19em;
-        font-size: 1.6em;
-        position: absolute;
-        top: 31em;
-        left: 2.5em;
-    }
-    .info-icon {
-        padding: 11px 17px 11px 17px;
+    .filter-choice {
+        margin-bottom: 1em;
     }
     #info-sentence {
-        position: absolute;
-        top: 36em;
-        left: 2.2em;
-        white-space: nowrap;
-        font-size: 1.5em;
+        margin-left: 0;
     }
     #section-2 {
-        position: absolute;
-        top: 117em;
-        left: -2.5em;
-        border-radius: 0px;
-        width: 172.3%;
-        height: 58em;
-    }
-    #lodgings-section-title {
-        font-size: 2.2em;
-    }
-    .lodgings-boxes {
-        height: 20em;
-        width: 22em;
-    }
-    .lodgings-img {
-        height: 10em;
-    }
-    .place-name {
-        font-size: 1.6em;
-    }
-    .price {
-        font-size: 1.4em;
-        margin-top: 0.5em;
-    }
-    .lodgings-stars {
-        margin-top: 0.8em;
-    }
-    #view-more-title {
-        font-size: 1.7em;
-        margin-top: 1.5em;
+        width: 126%;
+        margin-left: -4.8em;
+        padding-left: 1.8em;
+        border-radius: 0;
     }
     #section-3 {
-        position: absolute;
-        top: 62em;
+        top: 72em;
         left: -2em;
-        border-radius: 0px;
-        width: 180%;
-        height: 54em;
-    }
-    .most-populars-title {
-        font-size: 2.2em;
+        width: 106.1%;
+        border-radius: 0;
     }
     .arrow-chart {
-        font-size: 2.2em;
-        margin-right: 1.3em;
+        margin-right: 1.5em;
     }
     .popular-boxes {
-        width:73em;
-        height: 12em;
-    }
-    .img-most-populars {
-        height: 11.5em;
-    }
-    .most-populars-names-places {
-        font-size: 1.7em;
-    }
-    .price-populars {
-        font-size: 1.5em;
+        width: 97%;
     }
     .populars-stars {
-        font-size: 1.5em;
-        margin-top: 1.4em;
+        margin-top: 1em;
     }
     #section-4 {
-        position: absolute;
-        top: 177em;
+        margin-top: 42em;
+        margin-left: -1.3em;
     }
-    #activities-section-title {
-        font-size: 2.2em;
-        margin-left: 3em;
+    .pomegues-frioul-container {
+        margin-top: -27.5em;
+        margin-left: 22em;
     }
-    #vieux-port-box {
-        height: 30.3em;
-        width: 21em;
-        margin-left: 7em;
+    .parc-national-des-calanques-box {
+        margin-top: 3em;
     }
-    .vieux-port-img {
-        height: 26.5em;
-    }
-    #fort-de-pomegues-box {
-        position: absolute;
-        top: 9.3em;
-        left: 38em;
-        height: 17em;
-    }
-    .fort-de-pomegues-img {
-        height: 13em;
-    }
-    #ile-du-frioul-box {
-        position: absolute;
-        top: 28.3em;
-        left:38em;
-        height: 11.5em;
-    }
-    .ile-du-frioul-img {
-        height: 8em;
-    }
-    #parc-national-des-calanques-box {
-        position: absolute;
-        top: 43em;
-        left: 9.3em;
-        width: 20.98em;
-        height: 32.5em;
-    }
-    .parc-national-des-calanques-img {
-        height: 26.5em;
-    }
-    #notre-dame-de-la-garde-box {
-        position: absolute;
-        top: 42.8em;
-        left: 38em;
-        height: 15.5em;
-        width: 22em;
-    }
-    .notre-dame-de-la-garde-img {
-        height: 10.27em;
-    }
-    #parc-longchamp-box{
-        position: absolute;
-        top: 60em;
-        left: 38em;
-        height: 15.5em;
-    }
-    .parc-longchamp-img {
-        width: 22em;
-    }
-    .activities-parts-titles {
-        font-size: 1.6em;
+    .container-notre-dame-longchamp {
+        margin-top: -27.5em;
+        margin-left: 22em;
     }
     footer {
-        width: 184.2%;
-        position: absolute;
-        top: 260em;
+        width: 109.8%;
     }
     #footer-navigation {
-        margin-left: 15em;
+        margin-left: 14em;
+    } 
+    .footer-block {
+        margin-right: 7em;
     }
-    .footer-title {
-        font-size: 1.8em;
+}    
+
+/* CSS for mobile's landscape orientation design */
+@media screen and (min-width: 576px)  and (max-width: 767.98px) and (orientation: landscape) {
+    
+    #logo-img {
+        padding-left: 2em;
     }
-    .footer-link {
-        font-size: 1.6em;
+    .header-navigation .header-navigation-link .overline-effect{
+        display: none;
+    } 
+    .navigation-link-lodgings {
+        position: absolute;
+        left: 25em;
     }
-}
+    .navigation-link-activities {
+        position: absolute;
+        left: 34em;
+    }
+    .navigation-link-sign-up {
+        position: absolute;
+        left: 40em;
+    }
+    nav div:last-child {
+        margin-right: 0;
+    }
+    #button-research {
+        display: none;
+    }
+    .research-box {
+        margin-top: 0.7em;
+        margin-bottom: 0.78em;
+    }
+    #button-2 {
+        display: inline;
+        border: none;
+        border-radius: 16px 16px 16px 16px;
+        background-color: #0065fc;
+        color: #FFF;
+        width: 3.3em;
+        font-weight: 700;
+        font-size: 16px;
+        height: 3.2em;
+        padding: 17px;
+        margin-left: -0.7em;
+    }
+    .filters-options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter-choice {
+        margin-bottom: 1em;
+    }
+    #section-2 {
+        margin-left: -4.5em;
+        padding-left: 2em;
+        border-radius: 0;
+        width: 150.2%;
+    }
+    #section-3 {
+        margin-top: 46em;
+        left: -2em;
+        border-radius: 0;
+        width: 126%;
+    }
+    .arrow-chart {
+        margin-right: 2em;
+    }
+    .popular-boxes {
+        width: 95%;
+    }
+    #section-4 {
+        margin-top: 43em;
+    }
+    .pomegues-frioul-container {
+        margin-top: -27.5em;
+        margin-left: 22em;
+    }
+    .parc-national-des-calanques-box {
+        margin-top: 3em;
+    }
+    .container-notre-dame-longchamp {
+        margin-top: -27.5em;
+        margin-left: 22em;
+    }
+    footer {
+        width: 130.2%;
+    }
+    #footer-navigation {
+        margin-left: 14em;
+    } 
+    .footer-block {
+        margin-right: 7em;
+    }
+} 
 
 /* CSS for mobile's portrait orientation design */
 @media screen and (max-width: 575.98px) {
-
-    #logo-img {
-        padding-top: 4em;
-        padding-left: 4em;
-        height: 8em;
-    }
-    .navigation-link-sign-up a {
-        font-weight: 600;
-        font-size: 3em;
-        position: absolute;
-        left: 17em;
-        top: 0em;
-    }
-    
-    .navigation-link-activities a {
-        font-size: 1.1em;
-        position: absolute;
-        top: 6em;
-        left: 15em;
-    }
-    
-    .navigation-link-lodgings {
-        font-size: 1.1em;
-        position: absolute;
-        top: 6em;
-        left: 2.5em;
-    }
-    #section-4 {
-        position: absolute;
-        top: 200em;
-    }
-    footer {
-        position: absolute;
-        top: 250em;
-        width: 350%;
+    #bloc-page {
+        width: 100%;
+        margin: auto;
     }
 }
