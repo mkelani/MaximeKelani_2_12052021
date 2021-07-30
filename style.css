@@ -1,15 +1,8 @@
-/* CSS for the desktop's design */
-
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    width: 100%;
     margin: 0;
-}
-html {
-    font-size: 100%;
-}
-#bloc-page {
-    width: 80%;
-    margin: auto;
+    padding: 0;
 }
 .color-blue {
     color: #0065FC;
@@ -20,177 +13,205 @@ html {
 .color-grey {
     color: rgba(54, 54, 50, 0.2);
 }
+.color-white {
+    color: #FFF;
+}
+
+/* Header for mobile's portrait orientation design */
+#logo-img {
+    margin-top: 1.8em;
+    margin-left: 1.5em;
+    color: #0065FC;
+}
 a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.92);
 } 
-
-/* Header for desktop's orientation design */
-#logo-img {
-    padding-top: 0.8em;
-    padding-left: 2.3em;
-    color: #0065FC;
-}
-
-/* Header's Navigation for desktop's design */
-.header-navigation {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo-img . lodgings-link activities-link sign-up-link";
-}
-.header-navigation img {
-    grid-area: logo-img;
-}
-.header-navigation .header-active-link {
-    color: #0065FC;
-}
 .header-navigation a {
     color: #0065FC;
     text-decoration: none;
-    margin: 3em;
-}
-.header-navigation .header-navigation-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.header-navigation .navigation-link-lodgings {
-    grid-area: lodgings-link;
-    color: #0065fc;
-}
-.header-navigation .navigation-link-lodgings > .overline-effect {
-    background-color: #0065fc;
-}
-.header-navigation .navigation-link-activities:hover > .overline-effect {
-    background-color: #0065fc; 
-}
-.header-navigation .navigation-link-activities {
-    grid-area: activities-link;
-    color: black;
-}
-.header-navigation .navigation-link-sign-up {
-    grid-area: sign-up-link;
-    color: #0065fc;
-    font-weight: 600;
-}
-.navigation-link-activities a {
-    color: black;
-}
-.navigation-link-activities a:hover {
-    color: #0065fc;
 }
 .navigation-link-sign-up a {
     color: #0065fc;
+    font-weight: 600;
+    position: absolute;
+    left: 17em;
+    top: 2.5em;
 }
-.header-navigation .header-navigation-link .overline-effect {
-    width: 100%;
+.navigation-link-activities a {
+    color: rgba(0, 0, 0, 0.92);
+    position: absolute;
+    top: 6.3em;
+    left: 15em;
+}
+.navigation-link-lodgings a {
+    position: absolute;
+    top: 6.3em;
+    left: 2.6em;
+}
+.header-navigation .navigation-link-lodgings .underline-effect {
     height: 3px;
+    position: absolute;
+    top: 8.3em;
+    width: 50%;
+    background: #FFF;
 }
-nav div:last-child {
-    margin-right: 3.5em;
+.header-navigation .navigation-link-lodgings > .underline-effect {
+    background-color: #0065fc;
+}
+.header-navigation .navigation-link-activities .underline-effect {
+    height: 3px;
+    position: absolute;
+    top: 8.3em;
+    left: 50%;
+    width: 50%;
+    background: #FFF;
+}
+.header-navigation .navigation-link-activities > .underline-effect {
+    background-color: #F2F2F2;
+}
+.header-navigation .navigation-link-activities:hover > .underline-effect {
+    background-color: #0065fc;
 }
 
-/* First section for desktop's design */
+/* First section for mobile's portrait orientation design*/
 #section-1 {
     background-color: #FFF;
 }
-.main-title-subtitle {
-    margin-top: 1.5em;
-    margin-left: 2.5em;
+#h1-title {
+    color: rgba(0, 0, 0, 0.92);
+    position: absolute;
+    top: 6.6em;
+    left: 0.9em;
 }
 #subtitle {
-    margin-top: -0.7em;
+    font-size: 1em;
+    white-space: nowrap;
+    position: absolute;
+    top: 14.3em;
+    left: 1.5em;
 }
 .research-box {
     display: inline-flex;
     flex-direction: row;
-    margin-left: 2.5em;
-    margin-top: 1em;
-}
-.research-bar {
-    padding: 0 0 0 20px;
-    height: 50px;
-    width: 220px;
-    border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
-    font-size: larger;
-    text-decoration: none;
+    margin-left: 1.4em;
+    margin-top: 13.5em;
 }
 .map-icon {
+    font-size: 1.1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.438em;
-    height: 3.125em;
+    width: 3em;
+    height: 3em;
     background-color: #F2F2F2;
-    border-radius: 14px 0 0 14px;
+    border-radius: 18px 0 0 18px;
+}
+.research-bar {
+    width: 14em;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    padding: 0 0 0 20px;
+    font-size: 1em;
+    text-decoration: none;
+    margin-right: -1em;
 }
 input::placeholder {
     color: rgba(0, 0, 0, 0.92);
     opacity: 1;
-    }
+}
 #button-research {
+    display: none;
     border: none;
     border-radius: 0 14px 14px 0;
     background-color: #0065fc;
     color: #FFF;
-    height: 3.125em;
-    width: 9.375em;
+    height: 3.3em;
+    width: 9.3em;
     font-weight: 700;
     font-size: 1em;
-    padding: 1.063em;
+    padding: 1em;
     cursor: pointer;
 }
 #button-2 {
-    display: none;
+    border: none;
+    border-radius: 16px 16px 16px 16px;
+    background-color: #0065fc;
+    color: #FFF;
+    width: 3.3em;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 17px;
+    cursor: pointer;
 }
+#title-filters {
+    position: absolute;
+    top: 17.8em;
+    left: 1.2em;
+    margin-top: 1.8em;
+    font-size: 1.2em;
+} 
 .filter-choice {
-    border: 2px solid rgba(54, 54, 50, 0.2);
+    border: 2.5px solid rgba(54, 54, 50, 0.2);
     border-left: none;
     border-radius: 200px;
-    height: 3.125em;
+    height: 50px;
     font-weight: bold;
-    margin-left: 1.875em;
+    margin-left: 30px;
     color: rgba(0, 0, 0, 0.92);
 }
-.filter-choice:hover {
-    background-color: #deebff;
+.filter-economical {
+    width: 11.5em;
+    position: absolute;
+    top:26em;
+    left: 1em;
+    margin-left: 0.2em;
+}
+.filter-family {
+    width: 9em;
+    position: absolute;
+    top: 26em;
+    left: 12.2em;
+    padding-right: 0.3em;
+    margin-left: 1em;
+}
+.filter-romantic {
+    width: 10.5em;
+    position: absolute;
+    top: 30.2em;
+    left: 0.2em;
+    margin-left: 1em;
+    padding-right: 0.7em;
+}
+.filter-authorized-animals {
+    width: 232px;
+    position: absolute;
+    top: 34.3em;
+    left: 0.2em;
+    margin-left: 1em;
 }
 .filters-options {
-    display: flex;
-    margin-top: 2em;
-    margin-left: 2.5em;
+    display: inline-block;
+    align-content: space-between;
+    padding-bottom: 3em;
+    margin-top: 32px;
 }
 .filter-icons {
     color: #0065FC;
     background-color: #deebff;
     border-radius: 200px;
-    margin-top: -0.063em;
-    margin-right: 0.938em;
-    padding: 1.125em;
-    width: 1.25em;
-}
-.filter-economical {
-    width: 11.875em;
-}
-.filter-family {
-    width: 9.5em;
-}
-.filter-romantic {
-    width: 11.5em;
-}
-.filter-authorized-animals {
-    width: 14.688em;
+    margin-top: -1px;
+    margin-right: 15px;
+    padding: 18px;
+    width: 20px;
 }
 #info-sentence {
-    margin-top: 1.7em;
-    margin-bottom: 2.3em;
-    margin-left: 2.5em;
+    font-size: 1em;
+    position: absolute;
+    top: 39.5em;
+    left: 1.1em;
+    margin-right: 0.1em;
 }
 .info-icon {
     font-size: 0.7em;
@@ -201,40 +222,91 @@ input::placeholder {
     padding: 6px 10px 6px 10px;
 }
 
-/* Second section for desktop's design */
+/* section3 for mobile's portrait orientation design */
 #section-2 {
     background-color: #F2F2F2;
-    margin-top: 1.5em;
-    margin-left: 2.5em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    border-radius: 25px;
-    width: 54%;
-    height: 39em;
+    width: 100%;
+    position: absolute;
+    top: 44.5em;
+    left: 0;
+    height: 37em;
+    margin-bottom: 2em;
 }
-#container-lodgings {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 27px;
-    padding: 0 0 0 0;
+.most-populars-title {
+    color: rgba(0, 0, 0, 0.92);
+    position: absolute;
+    left: 0.8em;
+    margin-top: 1.6em;
+}
+.arrow-chart {
+    position: absolute;
+    top: 1.8em;
+    left: 14.5em;
+    font-size: 1.4em;
+}
+#container-les-plus-populaires {
+    position: absolute;
+    top: 4.7em;
+    left: 1.4em;
+}
+.popular-boxes {
+    background-color: #FFF;
+    border-radius: 20px;
+    width: 20.8em;
+    height: 9em;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    color: rgba(0, 0, 0, 0.92);
+}
+.img-most-populars {
+    float: left;
+    height: 8.3em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 0.3em;
+    padding-left: 0.2em;
+    padding-right: 1.2em;
+}
+.most-populars-names-places {
+    padding-top: 0.7em;
+}
+.price-populars {
+    margin-top: 0.3em;
+}
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 3px;
+}
+
+/* section2 for mobile's portrait orientation design */
+#section-3 {
+    background-color:#FFF;
+    position: absolute;
+    top: 83em;
+    height: 39em;
+    margin-bottom: 2em;
 }
 #lodgings-section-title {
-    padding-top: 1.7em;
+    margin-left: 0.8em;
     color: rgba(0, 0, 0, 0.92);
 }
 .lodgings-boxes {
     background-color: #FFF;
-    border-radius: 10px;
-    width: 15.3em;
-    height: 12.7em;
-    margin: 0;
+    border-radius: 25px;
+    width: 21em;
+    height: 13em;
+    margin-bottom: 2em;
+    margin-left: 1.2em;
     box-shadow: 0px 0px 6px 0px #0000002e;
-    color:black
+    color:rgba(0, 0, 0, 0.92);
 }
 .lodgings-img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-left: 0.1em;
     padding: 0.3em;
+    height: 7.2em;
+    width: 96%;
 }
 .place-name {
     margin-top: 0.125em;
@@ -245,409 +317,537 @@ input::placeholder {
     margin-top: 0em;
     margin-left: 0.938em;
 }
-.lodgings-boxes:hover {
-    background: #deebff;
-}
 .lodgings-stars {
     margin-top: 0.438em;
 }
 #view-more-title {
     margin-top: 2em;
+    margin-left: 1.3em;
+    font-size: 1.1em;
 }
 
-/* Third section for desktop's design*/
-#section-3 {
-    background-color: #F2F2F2;
-    margin-left: 1.875em;
-    padding-left: 1.875em;
-    border-radius: 25px;
-    width: 21.5%;
-    height: 39em;
-    position: absolute;
-    right: 17.5em;
-    top: 28.5em;
-}
-.title-h2-plus-icon {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0;
-}
-.most-populars-title {
-    color: rgba(0, 0, 0, 0.92);
-    margin-top: 2.5em;
-}
-.arrow-chart {
-    font-size: 1.438em;
-    margin-top: 2.5em;
-    margin-right: 2.5em;
-}
-.popular-boxes {
-    background-color: #FFF;
-    border-radius: 10px;
-    width: 22.3em;
-    height: 8.9em;
-    box-shadow: 0px 0px 6px 0px #0000002e;
-    color: rgba(0, 0, 0, 0.92);
-}
-.img-most-populars {
-    float: left;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding-top: 0.2em;
-    padding-left: 0.2em;
-    padding-bottom: 0.2em;
-    padding-right: 1.2em;
-}
-.popular-boxes:hover {
-    background-color: #deebff;
-}
-.most-populars-names-places {
-    padding-top: 0.7em;
-}
-.price-populars {
-    margin-top: -0.7em;
-}
-
-/* Section four for desktop's design */
+/* section4 for mobile's portrait orientation design */
 #section-4 {
     background-color: #FFF;
-    margin-bottom: 1.4em;
+    position: absolute;
+    top: 180em;
+    margin-bottom: 1.5em;
+    width: 100%;
 }
 #activities-section-title {
-    padding-left: 1.7em; 
-    padding-top: 1.7em;
+    margin-top: 1.7em;
+    margin-bottom: 1em;
+    margin-right: 1.7em;
+    margin-left: 1em; 
 }
 #activities-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    padding-bottom: 2.5em;
-}
-.activities-img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    margin-top: 1em;
+    margin-left: 0.1em
 }
 .activities-boxes {
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-    color: black;
-}
-.activities-boxes:hover {
-    background-color: #deebff;
+    color: rgba(0, 0, 0, 0.92);
+    height: 11.8em;
+    width: 20.8em;
+    margin-right: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1.5em;
 }
 .activities-parts-titles {
-    margin-top: 0.813em;
-    margin-left: 1.25em;
-    padding-bottom: 1.25em;
+    font-size: 1.1em;
+    margin-top: 13px;
+    margin-left: 20px;
+    padding-bottom: 20px;
     color: rgba(0, 0, 0, 0.92)
 }
-.vieux-port-box {
-    height: 27.5em;
-}
-.ile-du-frioul-box {
-    height: 10.1em;
-    margin-top: 2.2em;
-}
-.parc-national-des-calanques-box {
-    height: 27.5em;
-}
-.parc-longchamp-box {
-    height: 13em;
-    margin-top: 1.7em;
-}
-.container-notre-dame-longchamp {
-    padding-right: 3.5em;
+.activities-img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 8.5em;
+    color: rgba(0, 0, 0, 0.92);  
 }
 
-/* Footer for desktop's design */
+/* Footer for mobile's portrait orientation design */
 footer {
     width: 100%;
+    position: absolute;
+    top: 267em;
+    height: 30.5em;
     background: #F2F2F2;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 0px;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #footer-navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 0em;
-    margin-left: 1em;
-    margin-right: 27em;
-}
-.footer-title {
-    margin-bottom: 0.938em;
-    color: rgba(15, 15, 1, 0.99);
-    font-weight: bold;
-}
-.footer-block {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-right: 12em;
-    display: flex;
-    flex-direction: column;
-}
-.block-about {
-    margin-left: 13em;
-}
-.block-lodgings {
     margin-left: 2em;
 }
-.block-support {
-    margin-left: 3em;
+.footer-block {
+    margin-bottom: 2.5em;
+}
+.footer-title {
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.92);
+    font-weight: bold;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024.98px) and (orientation: landscape) {
-    #logo-img {
-        margin-left: -5em;    
+/* CSS for mobile's landscape mode */
+@media screen and (min-width: 576px) {
+    
+    .navigation-link-sign-up a {
+        left: 35em;
     }
-    .header-navigation .header-navigation-link .overline-effect{
+    .navigation-link-activities a {
+        top: 2.5em;
+        left: 29em;
+    }
+    .navigation-link-lodgings a {
+        top: 2.5em;
+        left: 20em;
+    }
+    .header-navigation .navigation-link-lodgings a > .overline-effect {
+        background-color: #0065fc;
+    }
+    
+    .header-navigation .navigation-link-activities a:hover > .overline-effect {
+        background-color: #0065fc; 
+    }
+    .header-navigation .header-navigation-link a .overline-effect {
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 1;
+    }
+    .header-navigation .navigation-link-lodgings .underline-effect {
         display: none;
-    } 
-    nav div:last-child {
-        margin-right: 0;
     }
-    .main-title-subtitle {
-        margin-left: -2.3em;
+    .header-navigation .navigation-link-activities .underline-effect {
+        display: none;
+    }
+    #h1-title {
+        top: 4em;
+    }
+    #subtitle {
+        top: 8.5em;
     }
     .research-box {
-        margin-left: -2.2em;
+        margin-top: 8em;
     }
-    .filters-options {
-        margin-left: -2em;
+    #button-research {
+        display: inline;
     }
-    .filter-choice {
-        font-size: 0.9em;
+    #button-2 {
+        display: none;
+    }
+    #title-filters {
+        top: 13em;
+    }
+    .filter-economical {
+        top: 20em;
+    }
+    .filter-family {
+        top: 20em;
+    }
+    .filter-romantic {
+        top: 20em;
+        left: 22em;
+    }
+    .filter-authorized-animals {
+        top: 24em;
     }
     #info-sentence {
-        margin-left: -2em;
+        top: 29em;
     }
     #section-2 {
-        width: 99.6%;
-        margin-left: -2.5em;
+        top: 33em;
+        left: 1em;
+        width: 95%;
+        border-radius: 25px;
     }
-    #section-3 {
-        width: 84%;
-        margin-top: 43em;
-        left: 2.2em;
+    .arrow-chart {
+        left: 26.2em;
     }
     .popular-boxes {
-        width: 94%;
+        width: 37em;
+    }
+    .price-populars {
+        margin-top: 0.5em;
     }
     .populars-stars {
-        margin-top: 1em;
+        margin-top: 1.5em;
+    }
+    #section-3 {
+        top: 73em;
+        left: 1em;
+        border-radius: 25px;
+        background-color: #F2F2F2;
+        width: 95%;
+        height: 53em;    
+    } 
+    #container-lodgings {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lodgings-boxes {
+        width: 18em;
+        height: 13em;
+        margin-bottom: 2em;
+        margin-left: 1em;
+    }
+    #view-more-title {
+        margin-top: 0.5em;
     }
     #section-4 {
-        margin-top: 44em;
+        top: 127em;
     }
-    .parc-national-des-calanques-box {
-        margin-top: 3em;
+    #activities-section-title {
+        margin-left: 1.5em;
     }
-    .container-notre-dame-longchamp {
-        margin-top: 3em;
-        padding-right: 0;
+    #activities-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1.5em;
+    }
+    .activities-boxes {
+        height: 16em;
+        width: 18em;
+        margin-right: 0.5em;
+        margin-bottom: 1.5em;
+    }
+    .activities-img {
+        width: 100%;
+        height: 13em;
+    }
+    footer {
+        top: 187em;
+        height: 15em;
+        flex-wrap: wrap;
     }
     #footer-navigation {
-        margin-left: 12em;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 1em;
+        margin-top: 1em;
     }
     .footer-block {
-        margin-right: 9em;
+        margin-right: 1em;
     }
 }
 
-/* Style for tablet's portrait orientation design */
-@media screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+/* Style for tablet's portrait mode */
+@media screen and (min-width: 768px) {
     
     #logo-img {
-        margin-left: -3em;
+        margin-left: 1em;
     }
     .header-navigation .header-navigation-link .overline-effect{
         display: none;
     } 
-    .navigation-link-lodgings {
+    .navigation-link-lodgings a{
         position: absolute;
         left: 25em;
     }
-    .navigation-link-activities {
+    .navigation-link-activities a {
         position: absolute;
         left: 34em;
     }
-    .navigation-link-sign-up {
+    .navigation-link-sign-up a {
         position: absolute;
         left: 40em;
     }
     .main-title-subtitle {
-        margin-left: -0.5em;
+        margin-left: 0em;
     }
     .research-box {
-        margin-left: -0.5em;
-    }
-    .filters-options {
-        margin-left: -0.5em;
-    }
-    .filter-choice {
-        width: 15em;
-        font-size: 0.7em;
-    }
-    .filters-options {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filter-choice {
-        margin-bottom: 1em;
+        margin-left: 1em;
     }
     #info-sentence {
         margin-left: 0;
     }
     #section-2 {
-        width: 126%;
-        margin-left: -4.8em;
-        padding-left: 1.8em;
-        border-radius: 0;
-    }
-    #section-3 {
-        top: 72em;
-        left: -2em;
-        width: 106.1%;
-        border-radius: 0;
+        width: 96%;
+        border-radius: 25px;
     }
     .arrow-chart {
-        margin-right: 1.5em;
+        left: 31em;
     }
     .popular-boxes {
-        width: 97%;
+        width: 230%;
     }
     .populars-stars {
         margin-top: 1em;
     }
+    #section-3 {
+        width: 96%;
+        height: 53em;
+        left: 0;
+        padding-left: 0;
+        border-radius: 25px 25px 25px 25px;
+        background-color: #F2F2F2;
+        margin-left: 1em;
+        margin-bottom: 0;
+    }
+    #lodgings-section-title {
+        margin-left: 3.6em;
+    }
+    #container-lodgings {
+        margin-left: 4.5em;
+    }
+    #view-more-title {
+        margin-left: 5em;
+    }
     #section-4 {
-        margin-top: 42em;
-        margin-left: -1.3em;
+        top: 127em;
     }
-    .pomegues-frioul-container {
-        margin-top: -27.5em;
-        margin-left: 22em;
+    #activities-section-title {
+        margin-left: 3.8em;
     }
-    .parc-national-des-calanques-box {
-        margin-top: 3em;
-    }
-    .container-notre-dame-longchamp {
-        margin-top: -27.5em;
-        margin-left: 22em;
+    #activities-container {
+        margin-left: 5em;
     }
     footer {
-        width: 109.8%;
+        top: 187em;
     }
     #footer-navigation {
-        margin-left: 14em;
+        margin-left: 2em
     } 
     .footer-block {
-        margin-right: 7em;
+        margin-right: 0;
     }
 }    
 
-/* CSS for mobile's landscape orientation design */
-@media screen and (min-width: 576px)  and (max-width: 767.98px) and (orientation: landscape) {
-    
-    #logo-img {
-        padding-left: 2em;
+/* Style for tablet's landscape mode */
+@media screen and (min-width: 992px) {
+
+    .navigation-link-sign-up a {
+        left: 53em;
     }
-    .header-navigation .header-navigation-link .overline-effect{
-        display: none;
-    } 
-    .navigation-link-lodgings {
-        position: absolute;
-        left: 25em;
+    .navigation-link-activities a {
+        left: 45em;
     }
-    .navigation-link-activities {
-        position: absolute;
+    .navigation-link-lodgings a {
         left: 34em;
     }
-    .navigation-link-sign-up {
-        position: absolute;
-        left: 40em;
+    .filter-authorized-animals {
+        left: 33.7em;
+        top: 20em;
     }
-    nav div:last-child {
-        margin-right: 0;
-    }
-    #button-research {
-        display: none;
-    }
-    .research-box {
-        margin-top: 0.7em;
-        margin-bottom: 0.78em;
-    }
-    #button-2 {
-        display: inline;
-        border: none;
-        border-radius: 16px 16px 16px 16px;
-        background-color: #0065fc;
-        color: #FFF;
-        width: 3.3em;
-        font-weight: 700;
-        font-size: 16px;
-        height: 3.2em;
-        padding: 17px;
-        margin-left: -0.7em;
-    }
-    .filters-options {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filter-choice {
-        margin-bottom: 1em;
+    #info-sentence {
+        top: 25em;
     }
     #section-2 {
-        margin-left: -4.5em;
-        padding-left: 2em;
-        border-radius: 0;
-        width: 150.2%;
-    }
-    #section-3 {
-        margin-top: 46em;
-        left: -2em;
-        border-radius: 0;
-        width: 126%;
+        top: 29em;
     }
     .arrow-chart {
-        margin-right: 2em;
+        left: 40.5em;
     }
     .popular-boxes {
-        width: 95%;
+        width: 300%;
+    }
+    #section-3 {
+        top: 68em;
+        height: 39em;
+    }
+    #lodgings-section-title {
+        margin-left: 1.5em;
+    }
+    #container-lodgings {
+        margin-left: 1em;
+    }
+    #view-more-title {
+        margin-left: 2em;
     }
     #section-4 {
-        margin-top: 43em;
+        top: 107em;
     }
-    .pomegues-frioul-container {
-        margin-top: -27.5em;
-        margin-left: 22em;
+    #activities-section-title {
+        margin-left: 1.5em;
     }
-    .parc-national-des-calanques-box {
-        margin-top: 3em;
-    }
-    .container-notre-dame-longchamp {
-        margin-top: -27.5em;
-        margin-left: 22em;
+    #activities-container {
+        margin-left: 1.5em;
     }
     footer {
-        width: 130.2%;
+        top: 150em;
     }
     #footer-navigation {
-        margin-left: 14em;
-    } 
-    .footer-block {
-        margin-right: 7em;
+        justify-content: space-around;
+        margin-left: -2em;
     }
-} 
+}
 
-/* CSS for mobile's portrait orientation design */
-@media screen and (max-width: 575.98px) {
-    #bloc-page {
+/* Style for desktop mode */
+@media screen and (min-width: 1025px) {
+
+    .header-navigation {
+        margin-left: 5.5em;
+    }
+    .navigation-link-lodgings a {
+        left: 74em;
+    }
+    .navigation-link-activities a {
+        left: 86em;
+    }
+    .navigation-link-sign-up a {
+        left: 95em;
+    }
+    .header-navigation .navigation-link-lodgings > .overline-effect {
+        background-color: #0065fc;
+    }
+    .header-navigation .navigation-link-activities:hover > .overline-effect {
+        background-color: #0065fc; 
+    }
+    .navigation-link-activities a:hover {
+        color: #0065fc;
+    }
+    .header-navigation .header-navigation-link .overline-effect {
         width: 100%;
-        margin: auto;
+        height: 3px;
+    }
+    #h1-title {
+        left: 4.5em;
+    }
+    #subtitle {
+        left: 7em;
+    }
+    .research-box {
+        margin-left: 6.8em;
+    }
+    #title-filters {
+        margin-top: 3em;
+        margin-left: 4.8em;
+    }
+    .filter-choice:hover {
+        background-color: #deebff;
+    }
+    .filter-economical {        
+        top: 18em;
+        left: 13em;
+    }
+    .filter-family {
+        top: 18em;
+        left: 25em;
+    }
+    .filter-romantic {
+        top: 18em;
+        left: 35.8em;
+    }
+    .filter-authorized-animals {
+        top: 18em;
+        left: 48.5em;
+    }
+    #info-sentence {
+        margin-left: 6em;
+    }
+    #section-2 {
+        height: 39em;
+        width: 23%;
+        left: 74em;
+        margin-bottom: 0;
+    }
+    .arrow-chart {
+        left: 15em;
+    }
+    .popular-boxes {
+        width: 112%;
+        height: 9.2em;
+    }
+    .popular-boxes:hover {
+        background-color: #deebff;
+    }
+    .img-most-populars {
+        height: 8.6em;
+    }
+    .populars-stars {
+        margin-top: 0.5em;
+    }
+    #section-3 {
+        background-color: #F2F2F2;
+        width: 54%;
+        height: 39em;
+        top: 29em;
+        left: 6em;
+        padding-left: 0.5em;
+        padding-right: 2em;
+        border-radius: 25px;
+    }
+    #container-lodgings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 27px;
+        padding: 0 0 0 0;
+    }
+    .lodgings-boxes:hover {
+        background: #deebff;
+    }
+    #section-4 {
+        top: 68em;
+    }
+    #activities-section-title {
+        padding-left: 3em; 
+        padding-top: 1.7em;
+    }
+    #activities-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 4.5em;
+        padding-right: 10em;
+        padding-bottom: 2.5em;
+
+    }
+    .activities-boxes:hover {
+        background-color: #deebff;
+    }
+    .activities-parts-titles {
+        margin-top: 13px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        color: rgba(0, 0, 0, 0.92)
+    }
+    .vieux-port-box {
+        height: 27.5em;
+    }
+    .vieux-port-img {
+        height: 24em;
+    }
+    .fort-de-pomegues-box {
+        height: 15em;
+        margin-left: -6em;
+    }
+    .fort-de-pomegues-img {
+        height: 12em;
+    }
+    .ile-du-frioul-box {
+        height: 11em;
+        margin-top: 16.5em;
+        margin-left: -28.5em;
+    }
+    .ile-du-frioul-img {
+        height: 8em;
+    }
+    .parc-national-des-calanques-box {
+        height: 27.5em;
+        margin-left: -5em;
+    }
+    .parc-national-des-calanques-img {
+        height: 24em;
+    }
+    .notre-dame-de-la-garde-box {
+        height: 15em;
+    }
+    .notre-dame-de-la-garde-img {
+        height: 12em;
+    }
+    .parc-longchamp-box {
+        height: 11em;
+        margin-left: -29em;
+        margin-top: 16.5em;
+    }
+    .parc-longchamp-img {
+        height: 8em;
+    }
+    footer {
+        top: 110em;
     }
 }
