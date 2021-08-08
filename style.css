@@ -5,8 +5,8 @@ body {
     padding: 0;
 }
 .color-blue {
-    color: #0065FC;
-}
+    color: #0065fc;
+}   
 .color-light-blue {
     color: #deebff;
 }
@@ -14,21 +14,22 @@ body {
     color: rgba(54, 54, 50, 0.2);
 }
 .color-white {
-    color: #FFF;
+    color: #fff;
 }
 
 /* Header for mobile's portrait orientation design */
 #logo-img {
-    margin-top: 1.8em;
+    height: 3em;
+    margin-top: 1.5em;
     margin-left: 1.5em;
-    color: #0065FC;
+    color: #0065fc;
 }
 a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.92);
-} 
+}
 .header-navigation a {
-    color: #0065FC;
+    color: #0065fc;
     text-decoration: none;
 }
 .navigation-link-sign-up a {
@@ -54,7 +55,7 @@ a {
     position: absolute;
     top: 8.3em;
     width: 50%;
-    background: #FFF;
+    background: #fff;
 }
 .header-navigation .navigation-link-lodgings > .underline-effect {
     background-color: #0065fc;
@@ -65,10 +66,10 @@ a {
     top: 8.3em;
     left: 50%;
     width: 50%;
-    background: #FFF;
+    background: #fff;
 }
 .header-navigation .navigation-link-activities > .underline-effect {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 .header-navigation .navigation-link-activities:hover > .underline-effect {
     background-color: #0065fc;
@@ -76,7 +77,7 @@ a {
 
 /* First section for mobile's portrait orientation design*/
 #section-1 {
-    background-color: #FFF;
+    background-color: #fff;
 }
 #h1-title {
     color: rgba(0, 0, 0, 0.92);
@@ -104,14 +105,14 @@ a {
     align-items: center;
     width: 3em;
     height: 3em;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 18px 0 0 18px;
 }
 .research-bar {
     width: 14em;
     border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
     padding: 0 0 0 20px;
     font-size: 1em;
     text-decoration: none;
@@ -121,14 +122,17 @@ input::placeholder {
     color: rgba(0, 0, 0, 0.92);
     opacity: 1;
 }
+.research-bar:focus {
+    outline: none;
+}
 #button-research {
     display: none;
     border: none;
     border-radius: 0 14px 14px 0;
     background-color: #0065fc;
-    color: #FFF;
+    color: #fff;
     height: 3.3em;
-    width: 9.3em;
+    width: 8em;
     font-weight: 700;
     font-size: 1em;
     padding: 1em;
@@ -138,7 +142,7 @@ input::placeholder {
     border: none;
     border-radius: 16px 16px 16px 16px;
     background-color: #0065fc;
-    color: #FFF;
+    color: #fff;
     width: 3.3em;
     font-weight: 700;
     font-size: 16px;
@@ -151,7 +155,7 @@ input::placeholder {
     left: 1.2em;
     margin-top: 1.8em;
     font-size: 1.2em;
-} 
+}
 .filter-choice {
     border: 2.5px solid rgba(54, 54, 50, 0.2);
     border-left: none;
@@ -164,7 +168,7 @@ input::placeholder {
 .filter-economical {
     width: 11.5em;
     position: absolute;
-    top:26em;
+    top: 26em;
     left: 1em;
     margin-left: 0.2em;
 }
@@ -198,7 +202,7 @@ input::placeholder {
     margin-top: 32px;
 }
 .filter-icons {
-    color: #0065FC;
+    color: #0065fc;
     background-color: #deebff;
     border-radius: 200px;
     margin-top: -1px;
@@ -215,16 +219,16 @@ input::placeholder {
 }
 .info-icon {
     font-size: 0.7em;
-    color: #0065FC;
-    border: 1px solid #D9D9D9;
+    color: #0065fc;
+    border: 1px solid #d9d9d9;
     border-radius: 200px;
     margin-right: 0.5em;
     padding: 6px 10px 6px 10px;
 }
 
-/* section3 for mobile's portrait orientation design */
+/* section 2 "Les plus populaires" for mobile's portrait orientation design */
 #section-2 {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     width: 100%;
     position: absolute;
     top: 44.5em;
@@ -250,7 +254,7 @@ input::placeholder {
     left: 1.4em;
 }
 .popular-boxes {
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 20px;
     width: 20.8em;
     height: 9em;
@@ -259,8 +263,10 @@ input::placeholder {
     color: rgba(0, 0, 0, 0.92);
 }
 .img-most-populars {
+    object-fit: cover;
     float: left;
     height: 8.3em;
+    width: 40%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-top: 0.3em;
@@ -278,9 +284,9 @@ h3 {
     margin-bottom: 3px;
 }
 
-/* section2 for mobile's portrait orientation design */
+/* section 3 "Hébergements à Marseille" for mobile's portrait orientation design */
 #section-3 {
-    background-color:#FFF;
+    background-color: #fff;
     position: absolute;
     top: 83em;
     height: 39em;
@@ -291,16 +297,17 @@ h3 {
     color: rgba(0, 0, 0, 0.92);
 }
 .lodgings-boxes {
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 25px;
     width: 21em;
     height: 13em;
     margin-bottom: 2em;
     margin-left: 1.2em;
     box-shadow: 0px 0px 6px 0px #0000002e;
-    color:rgba(0, 0, 0, 0.92);
+    color: rgba(0, 0, 0, 0.92);
 }
 .lodgings-img {
+    object-fit: fill;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-left: 0.1em;
@@ -326,9 +333,9 @@ h3 {
     font-size: 1.1em;
 }
 
-/* section4 for mobile's portrait orientation design */
+/* section 4 "Activités à Marseille" for mobile's portrait orientation design */
 #section-4 {
-    background-color: #FFF;
+    background-color: #fff;
     position: absolute;
     top: 180em;
     margin-bottom: 1.5em;
@@ -338,15 +345,15 @@ h3 {
     margin-top: 1.7em;
     margin-bottom: 1em;
     margin-right: 1.7em;
-    margin-left: 1em; 
+    margin-left: 1em;
 }
 #activities-container {
     margin-top: 1em;
-    margin-left: 0.1em
+    margin-left: 0.1em;
 }
 .activities-boxes {
     border-radius: 25px;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
     color: rgba(0, 0, 0, 0.92);
     height: 11.8em;
     width: 20.8em;
@@ -359,14 +366,15 @@ h3 {
     margin-top: 13px;
     margin-left: 20px;
     padding-bottom: 20px;
-    color: rgba(0, 0, 0, 0.92)
+    color: rgba(0, 0, 0, 0.92);
 }
 .activities-img {
+    object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
-    height: 8.5em;
-    color: rgba(0, 0, 0, 0.92);  
+    height: 75%;
+    color: rgba(0, 0, 0, 0.92);
 }
 
 /* Footer for mobile's portrait orientation design */
@@ -375,7 +383,7 @@ footer {
     position: absolute;
     top: 267em;
     height: 30.5em;
-    background: #F2F2F2;
+    background: #f2f2f2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -394,7 +402,6 @@ footer {
 
 /* CSS for mobile's landscape mode */
 @media screen and (min-width: 576px) {
-    
     .navigation-link-sign-up a {
         left: 35em;
     }
@@ -409,15 +416,14 @@ footer {
     .header-navigation .navigation-link-lodgings a > .overline-effect {
         background-color: #0065fc;
     }
-    
     .header-navigation .navigation-link-activities a:hover > .overline-effect {
-        background-color: #0065fc; 
+        background-color: #0065fc;
     }
     .header-navigation .header-navigation-link a .overline-effect {
         width: 100%;
         height: 3px;
         position: absolute;
-        top: 1;
+        top: 1em;
     }
     .header-navigation .navigation-link-lodgings .underline-effect {
         display: none;
@@ -460,10 +466,10 @@ footer {
         top: 29em;
     }
     #section-2 {
-        top: 33em;
-        left: 1em;
-        width: 95%;
-        border-radius: 25px;
+    top: 33em;
+    left: 1em;
+    width: 95%;
+    border-radius: 25px;
     }
     .arrow-chart {
         left: 26.2em;
@@ -481,10 +487,10 @@ footer {
         top: 73em;
         left: 1em;
         border-radius: 25px;
-        background-color: #F2F2F2;
+        background-color: #f2f2f2;
         width: 95%;
-        height: 53em;    
-    } 
+        height: 53em;
+    }
     #container-lodgings {
         display: flex;
         flex-wrap: wrap;
@@ -537,14 +543,13 @@ footer {
 
 /* Style for tablet's portrait mode */
 @media screen and (min-width: 768px) {
-    
     #logo-img {
         margin-left: 1em;
     }
-    .header-navigation .header-navigation-link .overline-effect{
+    .header-navigation .header-navigation-link .overline-effect {
         display: none;
-    } 
-    .navigation-link-lodgings a{
+    }
+    .navigation-link-lodgings a {
         position: absolute;
         left: 25em;
     }
@@ -584,7 +589,7 @@ footer {
         left: 0;
         padding-left: 0;
         border-radius: 25px 25px 25px 25px;
-        background-color: #F2F2F2;
+        background-color: #f2f2f2;
         margin-left: 1em;
         margin-bottom: 0;
     }
@@ -610,16 +615,15 @@ footer {
         top: 187em;
     }
     #footer-navigation {
-        margin-left: 2em
-    } 
+        margin-left: 2em;
+    }
     .footer-block {
         margin-right: 0;
     }
-}    
+}
 
 /* Style for tablet's landscape mode */
 @media screen and (min-width: 992px) {
-
     .navigation-link-sign-up a {
         left: 53em;
     }
@@ -678,70 +682,69 @@ footer {
 
 /* Style for desktop mode */
 @media screen and (min-width: 1025px) {
-
-    .header-navigation {
-        margin-left: 5.5em;
+    #logo-img {
+        margin-left: 15.5em;
     }
     .navigation-link-lodgings a {
-        left: 74em;
+        left: 72em;
     }
     .navigation-link-activities a {
-        left: 86em;
+        left: 84em;
     }
     .navigation-link-sign-up a {
-        left: 95em;
+        left: 93em; 
     }
     .header-navigation .navigation-link-lodgings > .overline-effect {
         background-color: #0065fc;
     }
     .header-navigation .navigation-link-activities:hover > .overline-effect {
-        background-color: #0065fc; 
-    }
-    .navigation-link-activities a:hover {
-        color: #0065fc;
+        background-color: #0065fc;
     }
     .header-navigation .header-navigation-link .overline-effect {
         width: 100%;
         height: 3px;
     }
+    .navigation-link-activities a:hover {
+        color: #0065fc;
+    }
     #h1-title {
-        left: 4.5em;
+        left: 10.5em;
     }
     #subtitle {
-        left: 7em;
+        left: 16em;
     }
     .research-box {
-        margin-left: 6.8em;
+        margin-left: 16em;
     }
     #title-filters {
         margin-top: 3em;
-        margin-left: 4.8em;
+        margin-left: 12.2em;
     }
     .filter-choice:hover {
         background-color: #deebff;
     }
-    .filter-economical {        
+    .filter-economical {
         top: 18em;
-        left: 13em;
+        left: 21.5em;
     }
     .filter-family {
         top: 18em;
-        left: 25em;
+        left: 34em;
     }
     .filter-romantic {
         top: 18em;
-        left: 35.8em;
+        left: 45em;
     }
     .filter-authorized-animals {
         top: 18em;
-        left: 48.5em;
+        left: 58em;
     }
     #info-sentence {
-        margin-left: 6em;
+        margin-left: 15em;
     }
     #section-2 {
         height: 39em;
-        width: 23%;
+        width: 22%;
         left: 74em;
         margin-bottom: 0;
     }
@@ -762,11 +765,11 @@ footer {
         margin-top: 0.5em;
     }
     #section-3 {
-        background-color: #F2F2F2;
-        width: 54%;
+        background-color: #f2f2f2;
+        width: 46%;
         height: 39em;
         top: 29em;
-        left: 6em;
+        left: 15em;
         padding-left: 0.5em;
         padding-right: 2em;
         border-radius: 25px;
@@ -777,77 +780,90 @@ footer {
         grid-gap: 27px;
         padding: 0 0 0 0;
     }
+    .lodgings-boxes {
+        width: 92%;
+    }
     .lodgings-boxes:hover {
         background: #deebff;
+    }
+    .lodgings-img {
+        width: 94.5%;
     }
     #section-4 {
         top: 68em;
     }
     #activities-section-title {
-        padding-left: 3em; 
-        padding-top: 1.7em;
+        margin-left: 10.5em;
+        margin-top: 2em;
     }
     #activities-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: 4.5em;
-        padding-right: 10em;
-        padding-bottom: 2.5em;
-
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: min-content(100px, auto);
+        column-gap: 20px;
+        row-gap: 15px; 
+        /* justify-content: center; */
+        margin-left: 15em;
+        margin-right: 15em; 
+        /* align-items: stretch;
+        justify-items: stretch; */
     }
     .activities-boxes:hover {
         background-color: #deebff;
     }
-    .activities-parts-titles {
-        margin-top: 13px;
-        margin-left: 20px;
-        padding-bottom: 20px;
-        color: rgba(0, 0, 0, 0.92)
-    }
     .vieux-port-box {
-        height: 27.5em;
+        height: 27em;
+        grid-area: 1 / 1 / 3 / 3;
     }
     .vieux-port-img {
-        height: 24em;
+        height: 23.5em;
     }
     .fort-de-pomegues-box {
-        height: 15em;
-        margin-left: -6em;
+        height: 14.7em; 
+        grid-area: 1 / 2 / 2 / 3;
     }
     .fort-de-pomegues-img {
-        height: 12em;
+        height: 11.5em; 
     }
     .ile-du-frioul-box {
-        height: 11em;
-        margin-top: 16.5em;
-        margin-left: -28.5em;
+        height: 11em; 
+        grid-column: 2 / 4;
+        margin-top: -14.3em;
     }
     .ile-du-frioul-img {
-        height: 8em;
+        height: 8em; 
     }
     .parc-national-des-calanques-box {
-        height: 27.5em;
-        margin-left: -5em;
+        height: 27em;
+        grid-column: 3 / 4;
+        grid-row: 1;
     }
     .parc-national-des-calanques-img {
-        height: 24em;
+        height: 23.5em;
+
     }
     .notre-dame-de-la-garde-box {
-        height: 15em;
+        height: 12em; 
+        grid-column: 4 / 4;
+        grid-row: 1 / 2;
     }
     .notre-dame-de-la-garde-img {
-        height: 12em;
+        height: 8.7em;
+        
     }
     .parc-longchamp-box {
-        height: 11em;
-        margin-left: -29em;
-        margin-top: 16.5em;
+        height: 13em; 
+        grid-column: 4 / 4;
+        margin-top: -16.5em;
     }
     .parc-longchamp-img {
-        height: 8em;
+        height: 9.5em;
     }
     footer {
-        top: 110em;
+        top: 107em;
+    }
+    #footer-navigation {
+        margin-left: 8em;
+        margin-right: 24em;
     }
 }
