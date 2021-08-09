@@ -413,18 +413,6 @@ footer {
         top: 2.5em;
         left: 20em;
     }
-    .header-navigation .navigation-link-lodgings a > .overline-effect {
-        background-color: #0065fc;
-    }
-    .header-navigation .navigation-link-activities a:hover > .overline-effect {
-        background-color: #0065fc;
-    }
-    .header-navigation .header-navigation-link a .overline-effect {
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        top: 1em;
-    }
     .header-navigation .navigation-link-lodgings .underline-effect {
         display: none;
     }
@@ -694,15 +682,22 @@ footer {
     .navigation-link-sign-up a {
         left: 93em; 
     }
+    .header-navigation .navigation-link-activities .underline-effect {
+        display: none;
+    }
     .header-navigation .navigation-link-lodgings > .overline-effect {
         background-color: #0065fc;
+        top: 0;
+        left: 60%;
+        width: 10%;
+        display: inline;
     }
     .header-navigation .navigation-link-activities:hover > .overline-effect {
         background-color: #0065fc;
-    }
-    .header-navigation .header-navigation-link .overline-effect {
-        width: 100%;
-        height: 3px;
+        top: 0;
+        left: 68%;
+        width: 10%;
+        display: inline;
     }
     .navigation-link-activities a:hover {
         color: #0065fc;
@@ -800,13 +795,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: min-content(100px, auto);
+        padding: 0 0 0 0;
         column-gap: 20px;
         row-gap: 15px; 
-        /* justify-content: center; */
         margin-left: 15em;
         margin-right: 15em; 
-        /* align-items: stretch;
-        justify-items: stretch; */
     }
     .activities-boxes:hover {
         background-color: #deebff;
